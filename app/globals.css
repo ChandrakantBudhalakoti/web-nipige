@@ -1,26 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto:wght@400;500;700&display=swap');
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "daisyui";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #0057FC;
+  --color-primary-focus: #003FA3;
+  --color-primary-content: #ffffff;
+  
+  --color-secondary: #333333;
+  --color-secondary-focus: #1a1a1a;
+  --color-secondary-content: #ffffff;
+  
+  --color-accent: #3384BF;
+  --color-accent-focus: #1f5a8c;
+  --color-accent-content: #ffffff;
+  
+  --color-neutral: #111111;
+  --color-neutral-focus: #000000;
+  --color-neutral-content: #ffffff;
+  
+  --color-base-100: #ffffff;
+  --color-base-200: #f5f5f5;
+  --color-base-300: #e5e5e5;
+  --color-base-content: #555555;
+  
+  --color-info: #0057FC;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  
+  --font-sans: 'Roboto', system-ui, sans-serif;
+  --font-serif: 'Nunito', system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  @apply scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-base-100 text-base-content font-sans antialiased;
+  font-family: 'Roboto', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif font-bold;
+  font-family: 'Nunito', system-ui, sans-serif;
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl font-bold leading-tight;
+}
+
+h2 {
+  @apply text-3xl sm:text-4xl font-bold leading-snug;
+}
+
+h3 {
+  @apply text-2xl sm:text-3xl font-bold leading-snug;
+}
+
+h4 {
+  @apply text-xl sm:text-2xl font-semibold;
+}
+
+p {
+  @apply leading-relaxed;
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+button {
+  @apply transition-all duration-200;
+}
+
+/* Utility Classes */
+.container-max {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-12 sm:py-16 md:py-20 lg:py-24;
+}
+
+.text-primary {
+  @apply text-primary;
+}
+
+.text-secondary {
+  @apply text-secondary;
+}
+
+.text-neutral {
+  @apply text-neutral;
+}
+
+.bg-gradient-primary {
+  @apply bg-gradient-to-r from-primary to-accent;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--tw-color-base-200);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tw-color-base-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tw-color-secondary);
 }
