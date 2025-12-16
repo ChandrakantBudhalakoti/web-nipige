@@ -1,5 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 
 export const metadata: Metadata = {
   title: "Nipige - SaaS Platform for Digital Commerce & E-enablement",
@@ -9,7 +14,6 @@ export const metadata: Metadata = {
   creator: "Nipige",
   publisher: "Nipige",
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
     type: "website",
     locale: "en_US",
