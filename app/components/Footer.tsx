@@ -49,16 +49,16 @@ export default function Footer() {
       {/* Main Footer Content */}
       <div className="section-padding">
         <div className="container-max">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <nav className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12" aria-label="Footer navigation">
             {footerSections.map((section, index) => (
               <div key={index}>
-                <h4 className="font-bold text-lg mb-4">{section.title}</h4>
+                <h3 className="font-bold text-lg mb-4">{section.title}</h3>
                 <ul className="space-y-2">
                   {section.links.map((link, linkIdx) => (
                     <li key={linkIdx}>
                       <Link
                         href={link.href}
-                        className="text-white/70 hover:text-white transition-colors text-sm"
+                        className="text-white/70 hover:text-white transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-white focus:rounded"
                       >
                         {link.label}
                       </Link>
@@ -67,7 +67,7 @@ export default function Footer() {
                 </ul>
               </div>
             ))}
-          </div>
+          </nav>
 
           {/* Social Links */}
           <div className="border-t border-white/20 pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
@@ -76,8 +76,8 @@ export default function Footer() {
                 href="https://facebook.com/nipige"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-circle btn-ghost btn-sm text-white hover:bg-white/10"
-                aria-label="Facebook"
+                className="btn btn-circle btn-ghost btn-sm text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white"
+                aria-label="Visit our Facebook page"
               >
                 f
               </a>
@@ -85,8 +85,8 @@ export default function Footer() {
                 href="https://linkedin.com/company/nipige"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-circle btn-ghost btn-sm text-white hover:bg-white/10"
-                aria-label="LinkedIn"
+                className="btn btn-circle btn-ghost btn-sm text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white"
+                aria-label="Visit our LinkedIn page"
               >
                 in
               </a>
@@ -94,8 +94,8 @@ export default function Footer() {
                 href="https://twitter.com/nipige"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-circle btn-ghost btn-sm text-white hover:bg-white/10"
-                aria-label="Twitter"
+                className="btn btn-circle btn-ghost btn-sm text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white"
+                aria-label="Visit our Twitter page"
               >
                 𝕏
               </a>
@@ -103,8 +103,8 @@ export default function Footer() {
                 href="https://instagram.com/nipige"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-circle btn-ghost btn-sm text-white hover:bg-white/10"
-                aria-label="Instagram"
+                className="btn btn-circle btn-ghost btn-sm text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white"
+                aria-label="Visit our Instagram page"
               >
                 📷
               </a>
@@ -117,19 +117,19 @@ export default function Footer() {
       </div>
 
       {/* Legal Links */}
-      <div className="bg-black/50 py-4">
+      <nav className="bg-black/50 py-4" aria-label="Legal navigation">
         <div className="container-max flex flex-col sm:flex-row justify-center gap-6 text-sm text-white/60">
-          <Link href="#privacy" className="hover:text-white transition-colors">
+          <Link href="#privacy" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:rounded">
             Privacy Policy
           </Link>
-          <Link href="#terms" className="hover:text-white transition-colors">
+          <Link href="#terms" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:rounded">
             Terms of Service
           </Link>
-          <Link href="#cookies" className="hover:text-white transition-colors">
+          <Link href="#cookies" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:rounded">
             Cookie Policy
           </Link>
         </div>
-      </div>
+      </nav>
     </footer>
   );
 }
