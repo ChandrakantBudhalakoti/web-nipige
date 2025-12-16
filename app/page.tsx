@@ -10,16 +10,26 @@ import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <main className="bg-white">
+    <>
+      {/* Skip to main content link for accessibility */}
+      <a
+        href="#main-content"
+        className="absolute -top-12 left-0 bg-primary text-white px-4 py-2 rounded hover:outline-none focus:outline-none focus:top-0 focus:ring-2 focus:ring-white transition-all"
+      >
+        Skip to main content
+      </a>
+
       <Header />
-      <Hero />
-      <SolutionsCarousel />
-      <HowItWorks />
-      <ExclusiveOfferings />
-      <ProductGallery />
-      <CustomerLogos />
-      <ContactSection />
+      <main id="main-content" className="bg-white">
+        <Hero />
+        <SolutionsCarousel />
+        <HowItWorks />
+        <ExclusiveOfferings />
+        <ProductGallery />
+        <CustomerLogos />
+        <ContactSection />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
