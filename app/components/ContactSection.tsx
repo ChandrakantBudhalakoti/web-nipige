@@ -83,7 +83,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="section-padding bg-primary text-white" id="contact">
+    <section className="section-padding bg-primary text-white" id="contact" aria-label="Contact section">
       <div className="container-max">
         <h2 className="text-center text-white mb-2">GET IN TOUCH</h2>
         <p className="text-center text-white/90 mb-12">
@@ -92,12 +92,12 @@ export default function ContactSection() {
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Column - Contact Info */}
-          <div className="space-y-6">
+          <address className="space-y-6 not-italic">
             {contactInfoItems.map((info, index) => (
               <div key={index} className="flex gap-4">
-                <div className="flex-shrink-0 text-4xl">{info.icon}</div>
+                <div className="flex-shrink-0 text-4xl" aria-hidden="true">{info.icon}</div>
                 <div>
-                  <h4 className="font-bold mb-2">{info.title}</h4>
+                  <h3 className="font-bold mb-2">{info.title}</h3>
                   {info.details.map((detail, idx) => (
                     <p key={idx} className="text-white/80 text-sm">
                       {detail}
@@ -115,8 +115,8 @@ export default function ContactSection() {
                   href="https://facebook.com/nipige"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-circle btn-ghost text-white hover:bg-white/20"
-                  aria-label="Facebook"
+                  className="btn btn-circle btn-ghost text-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white"
+                  aria-label="Visit our Facebook page"
                 >
                   f
                 </a>
@@ -124,8 +124,8 @@ export default function ContactSection() {
                   href="https://twitter.com/nipige"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-circle btn-ghost text-white hover:bg-white/20"
-                  aria-label="Twitter"
+                  className="btn btn-circle btn-ghost text-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white"
+                  aria-label="Visit our Twitter page"
                 >
                   𝕏
                 </a>
@@ -133,8 +133,8 @@ export default function ContactSection() {
                   href="https://linkedin.com/company/nipige"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-circle btn-ghost text-white hover:bg-white/20"
-                  aria-label="LinkedIn"
+                  className="btn btn-circle btn-ghost text-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white"
+                  aria-label="Visit our LinkedIn page"
                 >
                   in
                 </a>
@@ -142,84 +142,101 @@ export default function ContactSection() {
                   href="https://instagram.com/nipige"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-circle btn-ghost text-white hover:bg-white/20"
-                  aria-label="Instagram"
+                  className="btn btn-circle btn-ghost text-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white"
+                  aria-label="Visit our Instagram page"
                 >
                   📷
                 </a>
               </div>
             </div>
-          </div>
+          </address>
 
           {/* Right Column - Contact Form */}
           <div className="bg-white/10 backdrop-blur p-6 md:p-8 rounded-lg">
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid md:grid-cols-2 gap-4">
+              <fieldset>
+                <legend className="sr-only">Contact form</legend>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="firstName" className="sr-only">First Name</label>
+                    <input
+                      id="firstName"
+                      type="text"
+                      name="firstName"
+                      placeholder="First Name"
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      required
+                      className="input input-bordered input-sm bg-white/20 border-white/30 text-white placeholder-white/60 w-full focus:outline-none focus:ring-2 focus:ring-white"
+                      aria-label="First Name"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="lastName" className="sr-only">Last Name</label>
+                    <input
+                      id="lastName"
+                      type="text"
+                      name="lastName"
+                      placeholder="Last Name"
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      required
+                      className="input input-bordered input-sm bg-white/20 border-white/30 text-white placeholder-white/60 w-full focus:outline-none focus:ring-2 focus:ring-white"
+                      aria-label="Last Name"
+                    />
+                  </div>
+                </div>
+
+                <label htmlFor="email" className="sr-only">Email</label>
                 <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First Name"
-                  value={formData.firstName}
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Work Email"
+                  value={formData.email}
                   onChange={handleChange}
                   required
-                  className="input input-bordered input-sm bg-white/20 border-white/30 text-white placeholder-white/60"
-                  aria-label="First Name"
+                  className="input input-bordered input-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white"
+                  aria-label="Email"
                 />
+
+                <label htmlFor="phone" className="sr-only">Phone</label>
                 <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name"
-                  value={formData.lastName}
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone"
+                  value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="input input-bordered input-sm bg-white/20 border-white/30 text-white placeholder-white/60"
-                  aria-label="Last Name"
+                  className="input input-bordered input-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white"
+                  aria-label="Phone"
                 />
-              </div>
 
-              <input
-                type="email"
-                name="email"
-                placeholder="Work Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="input input-bordered input-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60"
-                aria-label="Email"
-              />
-
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-                className="input input-bordered input-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60"
-                aria-label="Phone"
-              />
-
-              <textarea
-                name="message"
-                placeholder="Message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows={4}
-                className="textarea textarea-bordered textarea-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60"
-                aria-label="Message"
-              />
+                <label htmlFor="message" className="sr-only">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={4}
+                  className="textarea textarea-bordered textarea-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white"
+                  aria-label="Message"
+                />
+              </fieldset>
 
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn btn-accent btn-block rounded-full"
+                className="btn btn-accent btn-block rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
 
               {submitMessage && (
-                <div className="alert alert-info">
+                <div className="alert alert-info" role="alert">
                   <span>{submitMessage}</span>
                 </div>
               )}
