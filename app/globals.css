@@ -136,7 +136,7 @@
 }
 
 * {
-  @apply scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100;
+  box-sizing: border-box;
 }
 
 html {
