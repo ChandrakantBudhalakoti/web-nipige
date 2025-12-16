@@ -48,14 +48,14 @@ const features: Feature[] = [
 
 export default function ExclusiveOfferings() {
   return (
-    <section className="section-padding bg-base-100" id="offerings">
+    <section className="section-padding bg-base-100" id="offerings" aria-label="Exclusive Nipige offerings">
       <div className="container-max">
         <h2 className="text-center mb-2">Exclusive Nipige Offerings</h2>
         <p className="text-center text-base-content/70 mb-12 max-w-2xl mx-auto">
           You can trust us to simplify every step of your business journey better than anyone else.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
           {features.map((feature) => (
             <FeatureCard key={feature.id} feature={feature} />
           ))}
