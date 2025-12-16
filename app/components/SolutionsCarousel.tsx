@@ -141,28 +141,28 @@ interface SolutionCardProps {
 
 function SolutionCard({ solution }: SolutionCardProps) {
   return (
-    <div className="card bg-white border border-base-300 hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+    <article className="card bg-white border border-base-300 hover:shadow-xl transition-shadow duration-300 overflow-hidden focus-within:ring-2 focus-within:ring-primary">
       <figure className="h-48 overflow-hidden">
         <img
           src={solution.image}
-          alt={solution.title}
+          alt={`${solution.title} solution illustration`}
           className="w-full h-full object-cover"
         />
       </figure>
       <div className="card-body">
         <h3 className="card-title text-neutral">{solution.title}</h3>
         <p className="text-base-content/70">{solution.description}</p>
-        <div className="flex flex-wrap gap-2 mt-4">
+        <div className="flex flex-wrap gap-2 mt-4" role="list">
           {solution.features.slice(0, 2).map((feature, idx) => (
-            <span key={idx} className="badge badge-primary badge-outline text-xs">
+            <span key={idx} className="badge badge-primary badge-outline text-xs" role="listitem">
               {feature}
             </span>
           ))}
         </div>
         <div className="card-actions justify-end mt-4">
-          <button className="btn btn-primary btn-sm rounded-full">Learn More</button>
+          <button className="btn btn-primary btn-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">Learn More</button>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
