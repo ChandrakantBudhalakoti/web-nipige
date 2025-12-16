@@ -68,13 +68,14 @@ export default function Hero() {
   return (
     <section
       className="relative w-full h-96 sm:h-[500px] md:h-[600px] overflow-hidden bg-primary"
-      aria-label="Hero carousel"
+      aria-label="Hero carousel section showcasing Nipige solutions"
+      role="region"
     >
       {/* Slide Image Background */}
       <div className="absolute inset-0">
         <img
           src={slide.image}
-          alt={slide.title}
+          alt={`${slide.title} hero background`}
           className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-primary/70" />
@@ -84,13 +85,13 @@ export default function Hero() {
       <div className="relative h-full flex items-center">
         <div className="container-max w-full">
           <div className="max-w-2xl">
-            <h1 className="text-white mb-4 leading-tight">{slide.title}</h1>
+            <h1 className="text-white mb-4 leading-tight focus:outline-none focus:ring-2 focus:ring-white focus:rounded">{slide.title}</h1>
             <p className="text-white/90 text-lg sm:text-xl mb-6 leading-relaxed">{slide.subtitle}</p>
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-              <button className="btn btn-accent btn-md rounded-full">
+              <button className="btn btn-accent btn-md rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
                 Get Started
               </button>
-              <span className="text-white/70 text-sm font-medium">{slide.cta}</span>
+              <span className="text-white/70 text-sm font-medium" aria-label={`Solution category: ${slide.cta}`}>{slide.cta}</span>
             </div>
           </div>
         </div>
@@ -99,7 +100,7 @@ export default function Hero() {
       {/* Navigation Controls */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 btn btn-circle btn-ghost text-white hover:bg-white/20"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 btn btn-circle btn-ghost text-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white"
         aria-label="Previous slide"
       >
         <svg
@@ -115,7 +116,7 @@ export default function Hero() {
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 btn btn-circle btn-ghost text-white hover:bg-white/20"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 btn btn-circle btn-ghost text-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white"
         aria-label="Next slide"
       >
         <svg
@@ -130,19 +131,19 @@ export default function Hero() {
       </button>
 
       {/* Pagination Dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+      <nav className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2" aria-label="Slide navigation">
         {heroSlides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+            className={`w-2 h-2 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white ${
               index === currentSlide ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/75'
             }`}
             aria-label={`Go to slide ${index + 1}`}
-            aria-current={index === currentSlide ? 'true' : 'false'}
+            aria-current={index === currentSlide ? 'page' : undefined}
           />
         ))}
-      </div>
+      </nav>
     </section>
   );
 }
