@@ -1,33 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto:wght@400;500;700&display=swap');
 @import "tailwindcss";
 
-@theme inline {
+@plugin "daisyui";
+
+@theme {
   --color-primary: #0057FC;
   --color-primary-focus: #003FA3;
   --color-primary-content: #ffffff;
-  
+
   --color-secondary: #333333;
   --color-secondary-focus: #1a1a1a;
   --color-secondary-content: #ffffff;
-  
+
   --color-accent: #3384BF;
   --color-accent-focus: #1f5a8c;
   --color-accent-content: #ffffff;
-  
+
   --color-neutral: #111111;
   --color-neutral-focus: #000000;
   --color-neutral-content: #ffffff;
-  
+
   --color-base-100: #ffffff;
   --color-base-200: #f5f5f5;
   --color-base-300: #e5e5e5;
   --color-base-content: #555555;
-  
+
   --color-info: #0057FC;
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
-  
+
   --font-sans: 'Roboto', system-ui, sans-serif;
   --font-serif: 'Nunito', system-ui, sans-serif;
 }
