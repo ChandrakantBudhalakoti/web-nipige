@@ -46,11 +46,11 @@ const products: Product[] = [
 
 export default function ProductGallery() {
   return (
-    <section className="section-padding bg-base-100">
+    <section className="section-padding bg-base-100" aria-label="Products and solutions gallery">
       <div className="container-max">
         <h2 className="text-center mb-12">Our Solutions & Services</h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
