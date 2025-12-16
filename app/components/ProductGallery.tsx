@@ -66,24 +66,24 @@ interface ProductCardProps {
 
 function ProductCard({ product }: ProductCardProps) {
   return (
-    <div className="group cursor-pointer overflow-hidden rounded-lg border border-base-300 hover:shadow-xl transition-all duration-300 bg-white">
+    <article className="group cursor-pointer overflow-hidden rounded-lg border border-base-300 hover:shadow-xl transition-all duration-300 bg-white focus-within:ring-2 focus-within:ring-primary" role="listitem">
       <div className="relative h-48 overflow-hidden bg-gray-100">
         <img
           src={product.image}
-          alt={product.title}
+          alt={`${product.title} - ${product.category}`}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
         />
         <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors duration-300" />
       </div>
       <div className="p-4">
-        <span className="text-xs font-semibold text-primary uppercase">{product.category}</span>
+        <span className="text-xs font-semibold text-primary uppercase" id={`category-${product.id}`}>{product.category}</span>
         <h3 className="font-bold text-neutral mt-2">{product.title}</h3>
         <div className="mt-4">
-          <button className="btn btn-primary btn-sm btn-outline rounded-full w-full">
+          <button className="btn btn-primary btn-sm btn-outline rounded-full w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
             Learn More
           </button>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
