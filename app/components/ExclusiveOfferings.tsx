@@ -71,9 +71,9 @@ interface FeatureCardProps {
 
 function FeatureCard({ feature }: FeatureCardProps) {
   return (
-    <article className="p-6 rounded-lg border border-base-300 hover:border-primary hover:shadow-lg transition-all duration-300 bg-white focus-within:ring-2 focus-within:ring-primary" role="listitem">
-      <div className="text-5xl mb-4" aria-hidden="true">{feature.icon}</div>
-      <h3 className="font-bold text-neutral mb-3">{feature.title}</h3>
+    <article className="p-6 sm:p-8 rounded-lg border border-base-300 hover:border-primary hover:shadow-xl transition-all duration-300 bg-white focus-within:ring-2 focus-within:ring-primary hover:-translate-y-1" role="listitem">
+      <div className="text-6xl mb-6" aria-hidden="true">{feature.icon}</div>
+      <h3 className="font-bold text-neutral text-lg mb-3 leading-snug">{feature.title}</h3>
       <p className="text-base-content/70 text-sm leading-relaxed">{feature.description}</p>
     </article>
   );
