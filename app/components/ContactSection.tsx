@@ -90,16 +90,16 @@ export default function ContactSection() {
           Are you Ready for a Better, more Productive Business?
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Column - Contact Info */}
-          <address className="space-y-6 not-italic">
+          <address className="space-y-8 not-italic">
             {contactInfoItems.map((info, index) => (
-              <div key={index} className="flex gap-4">
-                <div className="flex-shrink-0 text-4xl" aria-hidden="true">{info.icon}</div>
+              <div key={index} className="flex gap-6">
+                <div className="flex-shrink-0 text-5xl" aria-hidden="true">{info.icon}</div>
                 <div>
-                  <h3 className="font-bold mb-2">{info.title}</h3>
+                  <h3 className="font-bold text-lg mb-2">{info.title}</h3>
                   {info.details.map((detail, idx) => (
-                    <p key={idx} className="text-white/80 text-sm">
+                    <p key={idx} className="text-white/80 text-sm leading-relaxed">
                       {detail}
                     </p>
                   ))}
@@ -108,8 +108,8 @@ export default function ContactSection() {
             ))}
 
             {/* Social Links */}
-            <div className="pt-6 border-t border-white/20">
-              <p className="font-semibold mb-4">Connect with us</p>
+            <div className="pt-8 border-t border-white/20">
+              <p className="font-semibold mb-6 text-lg">Connect with us</p>
               <div className="flex gap-4">
                 <a
                   href="https://facebook.com/nipige"
@@ -152,11 +152,11 @@ export default function ContactSection() {
           </address>
 
           {/* Right Column - Contact Form */}
-          <div className="bg-white/10 backdrop-blur p-6 md:p-8 rounded-lg">
-            <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="bg-white/10 backdrop-blur p-6 sm:p-8 rounded-xl">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <fieldset>
                 <legend className="sr-only">Contact form</legend>
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="sr-only">First Name</label>
                     <input
@@ -167,7 +167,7 @@ export default function ContactSection() {
                       value={formData.firstName}
                       onChange={handleChange}
                       required
-                      className="input input-bordered input-sm bg-white/20 border-white/30 text-white placeholder-white/60 w-full focus:outline-none focus:ring-2 focus:ring-white"
+                      className="input input-bordered input-sm bg-white/20 border-white/30 text-white placeholder-white/60 w-full focus:outline-none focus:ring-2 focus:ring-white rounded-lg"
                       aria-label="First Name"
                     />
                   </div>
@@ -181,7 +181,7 @@ export default function ContactSection() {
                       value={formData.lastName}
                       onChange={handleChange}
                       required
-                      className="input input-bordered input-sm bg-white/20 border-white/30 text-white placeholder-white/60 w-full focus:outline-none focus:ring-2 focus:ring-white"
+                      className="input input-bordered input-sm bg-white/20 border-white/30 text-white placeholder-white/60 w-full focus:outline-none focus:ring-2 focus:ring-white rounded-lg"
                       aria-label="Last Name"
                     />
                   </div>
@@ -196,7 +196,7 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="input input-bordered input-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white"
+                  className="input input-bordered input-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white rounded-lg"
                   aria-label="Email"
                 />
 
@@ -209,7 +209,7 @@ export default function ContactSection() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="input input-bordered input-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white"
+                  className="input input-bordered input-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white rounded-lg"
                   aria-label="Phone"
                 />
 
@@ -222,7 +222,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="textarea textarea-bordered textarea-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white"
+                  className="textarea textarea-bordered textarea-sm w-full bg-white/20 border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white rounded-lg resize-none"
                   aria-label="Message"
                 />
               </fieldset>
@@ -230,13 +230,13 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn btn-accent btn-block rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+                className="btn btn-accent btn-block rounded-full w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white font-semibold"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
 
               {submitMessage && (
-                <div className="alert alert-info" role="alert">
+                <div className="alert alert-info rounded-lg" role="alert">
                   <span>{submitMessage}</span>
                 </div>
               )}
