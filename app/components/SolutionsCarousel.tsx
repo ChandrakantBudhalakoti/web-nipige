@@ -72,7 +72,7 @@ export default function SolutionsCarousel() {
   const visibleSolutions = solutions.slice(currentIndex, currentIndex + visibleCount);
 
   return (
-    <section className="section-padding bg-base-100" id="solutions">
+    <section className="section-padding bg-base-100" id="solutions" aria-label="Industry solutions carousel">
       <div className="container-max">
         <h2 className="text-center mb-2">Configurable Digital Commerce & E-enablement</h2>
         <p className="text-center text-base-content/70 mb-12 max-w-2xl mx-auto">
@@ -80,7 +80,7 @@ export default function SolutionsCarousel() {
         </p>
 
         {/* Carousel Container */}
-        <div className="relative">
+        <div className="relative" role="region" aria-label="Solutions carousel">
           <div className="hidden md:grid grid-cols-3 gap-6">
             {visibleSolutions.map((solution) => (
               <SolutionCard key={solution.id} solution={solution} />
@@ -98,7 +98,7 @@ export default function SolutionsCarousel() {
           <div className="flex justify-center gap-4 mt-8">
             <button
               onClick={prevSlide}
-              className="btn btn-circle btn-outline"
+              className="btn btn-circle btn-outline focus:outline-none focus:ring-2 focus:ring-primary"
               aria-label="Previous solutions"
             >
               <svg
@@ -107,13 +107,14 @@ export default function SolutionsCarousel() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button
               onClick={nextSlide}
-              className="btn btn-circle btn-outline"
+              className="btn btn-circle btn-outline focus:outline-none focus:ring-2 focus:ring-primary"
               aria-label="Next solutions"
             >
               <svg
@@ -122,6 +123,7 @@ export default function SolutionsCarousel() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
