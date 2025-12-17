@@ -7,11 +7,11 @@ export default function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Home', href: '#' },
+    { label: 'Home', href: '/' },
     { label: 'Solutions', href: '#solutions' },
     { label: 'Industries', href: '#industries' },
-    { label: 'Resources', href: '#resources' },
-    { label: 'About Us', href: '#about' },
+    { label: 'Resources', href: '/resources/blog' },
+    { label: 'About Us', href: '/about' },
   ];
 
   return (
