@@ -1,5 +1,6 @@
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
+import NewsletterForm from '@/app/components/NewsletterForm';
 import Link from 'next/link';
 
 export const metadata = {
@@ -198,20 +199,7 @@ export default function BlogPage() {
             <p className="text-white/90 text-lg mb-8">
               Subscribe to our newsletter for the latest insights and best practices in digital commerce.
             </p>
-            <form className="flex flex-col sm:flex-row gap-3" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 input input-bordered bg-white text-neutral rounded-full px-6 placeholder-base-content/50 focus:outline-none focus:ring-2 focus:ring-white/50"
-                aria-label="Email address for newsletter"
-              />
-              <button
-                type="submit"
-                className="btn btn-accent bg-white text-primary hover:bg-white/90 rounded-full font-semibold focus:outline-none focus:ring-2 focus:ring-white/50"
-              >
-                Subscribe
-              </button>
-            </form>
+            <NewsletterForm />
           </div>
         </section>
       </main>
