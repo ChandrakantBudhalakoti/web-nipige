@@ -2,85 +2,12 @@ import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import NewsletterForm from '@/app/components/NewsletterForm';
 import Link from 'next/link';
+import { blogPosts } from '@/app/lib/blog-data';
 
 export const metadata = {
   title: 'Blog | Nipige - Digital Commerce Insights',
   description: 'Explore articles, guides, and insights on digital commerce, e-enablement, and business growth strategies.',
 };
-
-interface BlogPost {
-  id: string;
-  title: string;
-  excerpt: string;
-  category: string;
-  author: string;
-  date: string;
-  readTime: string;
-  image: string;
-}
-
-const blogPosts: BlogPost[] = [
-  {
-    id: '1',
-    title: 'The Future of Digital Commerce: Trends to Watch in 2024',
-    excerpt: 'Explore the emerging trends shaping the digital commerce landscape and how businesses can adapt to stay competitive.',
-    category: 'Trends',
-    author: 'Sarah Johnson',
-    date: 'December 10, 2024',
-    readTime: '5 min read',
-    image: '📈',
-  },
-  {
-    id: '2',
-    title: 'Building Scalable Marketplace Solutions',
-    excerpt: 'Learn how to architect and build marketplace platforms that can handle growth without compromising performance.',
-    category: 'Development',
-    author: 'Michael Chen',
-    date: 'December 5, 2024',
-    readTime: '8 min read',
-    image: '🏗️',
-  },
-  {
-    id: '3',
-    title: 'Customer Experience Excellence: Best Practices',
-    excerpt: 'Discover actionable strategies to improve customer satisfaction and build lasting relationships with your audience.',
-    category: 'Strategy',
-    author: 'Emily Rodriguez',
-    date: 'November 28, 2024',
-    readTime: '6 min read',
-    image: '👥',
-  },
-  {
-    id: '4',
-    title: 'Integrating Payment Systems: A Complete Guide',
-    excerpt: 'A comprehensive guide to integrating multiple payment systems and ensuring seamless transactions for your customers.',
-    category: 'Technical',
-    author: 'John Smith',
-    date: 'November 20, 2024',
-    readTime: '7 min read',
-    image: '💳',
-  },
-  {
-    id: '5',
-    title: 'Global Expansion: Navigating Multi-Currency Commerce',
-    excerpt: 'Strategies for expanding your business globally with multi-currency support and localization best practices.',
-    category: 'Growth',
-    author: 'Sarah Johnson',
-    date: 'November 15, 2024',
-    readTime: '6 min read',
-    image: '🌍',
-  },
-  {
-    id: '6',
-    title: 'Data Analytics for Business Intelligence',
-    excerpt: 'Leverage data analytics to gain insights into your business performance and make data-driven decisions.',
-    category: 'Analytics',
-    author: 'Michael Chen',
-    date: 'November 10, 2024',
-    readTime: '7 min read',
-    image: '📊',
-  },
-];
 
 const categories = ['All', 'Trends', 'Development', 'Strategy', 'Technical', 'Growth', 'Analytics'];
 
@@ -141,9 +68,12 @@ export default function BlogPage() {
                       <p className="font-medium text-base-content">{blogPosts[0].author}</p>
                       <p>{blogPosts[0].date}</p>
                     </div>
-                    <button className="btn btn-primary rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                    <Link
+                      href={`/resources/blog/${blogPosts[0].id}`}
+                      className="btn btn-primary rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                    >
                       Read Article
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
