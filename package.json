@@ -42,5 +42,8 @@
   "overrides": {
     "@types/react": "$@types/react",
     "@types/react-dom": "$@types/react-dom"
+  },
+  "resolutions": {
+    "@types/react": "19.0.7"
   }
 }
