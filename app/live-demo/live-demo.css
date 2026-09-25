@@ -947,6 +947,14 @@
   gap: 28px;
   align-items: stretch;
 }
+/* let the frame absorb the extra height when the side card is taller */
+.ld .teaser .player {
+  display: flex;
+  flex-direction: column;
+}
+.ld .teaser .player .frame {
+  flex: 1;
+}
 .ld .inside {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -2941,38 +2949,9 @@
 }
 
 /* ============================================================
-   Site card treatment. Like the home page, marketing cards are
-   white with dark text in both themes, sitting on the navy bands.
-   Scoping light tokens onto the card makes everything inside follow.
+   Site card treatment. Cards take the theme tokens from .ld, so
+   they are white in light mode and navy surfaces in dark mode.
    ============================================================ */
-.ld .stats > div,
-.ld .mk,
-.ld .faq details,
-.ld .inside,
-.ld .box:not(.dash),
-.ld .k-c,
-.ld .safe div,
-.ld .startrow,
-.ld .pw,
-.ld .mobapps {
-  --bg: #f6f8fc;
-  --surface: #ffffff;
-  --surface2: #f1f5fb;
-  --text: #0f1b2d;
-  --muted: #475569;
-  --subtle: #64748b;
-  --border: rgba(15, 23, 42, 0.1);
-  --border2: rgba(15, 23, 42, 0.18);
-  --primary: #0891b2;
-  --primary-fg: #ffffff;
-  --primary-soft: rgba(8, 145, 178, 0.1);
-  --primary-soft-fg: #0e7490;
-  --green: #047857;
-  --green-soft: rgba(16, 185, 129, 0.12);
-  --amber: #b45309;
-  --amber-soft: rgba(217, 119, 6, 0.12);
-  color: var(--text);
-}
 /* Cyan accent bar on hover, as on the home page cards */
 .ld .mk {
   overflow: hidden;
