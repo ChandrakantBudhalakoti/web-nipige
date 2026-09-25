@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" preserveAspectRatio="xMidYMid meet" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#150b26"/><stop offset="0.55" stop-color="#221142"/><stop offset="1" stop-color="#301854"/></linearGradient>
+    <radialGradient id="gP" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#8B5CF6" stop-opacity="0.5"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241340"/><stop offset="1" stop-color="#180d2c"/></linearGradient>
+    <filter id="blurL" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="60"/></filter>
+    <filter id="chipShadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#03060f" flood-opacity="0.5"/></filter>
+    <filter id="cardShadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#0c0518" flood-opacity="0.55"/></filter>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <circle cx="600" cy="330" r="340" fill="url(#gP)" filter="url(#blurL)"/>
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1"><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="480" x2="1200" y2="480"/></g>
+
+  <text x="600" y="100" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="4" fill="#c4b0fa">PEER-TO-PEER MARKETPLACE &#183; 2026</text>
+  <text x="600" y="170" text-anchor="middle" font-size="46" font-weight="800" fill="#ffffff" letter-spacing="-1">Two strangers. One transaction.</text>
+  <text x="600" y="204" text-anchor="middle" font-size="20" fill="#cbb9ec">Trust is the product, not a feature you add later.</text>
+
+  <!-- Person A -->
+  <g transform="translate(220,300)">
+    <g filter="url(#cardShadow)"><rect x="0" y="0" width="220" height="240" rx="20" fill="url(#card)" stroke="#3a2a5a"/></g>
+    <circle cx="110" cy="70" r="34" fill="#3a2a5a"/>
+    <circle cx="110" cy="58" r="14" fill="#a78bfa"/>
+    <path d="M78 100 a32 26 0 0 1 64 0" fill="#a78bfa"/>
+    <text x="110" y="150" text-anchor="middle" font-size="16" font-weight="700" fill="#f1ecff">Seller</text>
+    <text x="110" y="174" text-anchor="middle" font-size="12.5" fill="#b7a6dd">Individual, not a</text>
+    <text x="110" y="192" text-anchor="middle" font-size="12.5" fill="#b7a6dd">registered business</text>
+  </g>
+
+  <!-- Person B -->
+  <g transform="translate(760,300)">
+    <g filter="url(#cardShadow)"><rect x="0" y="0" width="220" height="240" rx="20" fill="url(#card)" stroke="#3a2a5a"/></g>
+    <circle cx="110" cy="70" r="34" fill="#3a2a5a"/>
+    <circle cx="110" cy="58" r="14" fill="#67e8f9"/>
+    <path d="M78 100 a32 26 0 0 1 64 0" fill="#67e8f9"/>
+    <text x="110" y="150" text-anchor="middle" font-size="16" font-weight="700" fill="#f1ecff">Buyer</text>
+    <text x="110" y="174" text-anchor="middle" font-size="12.5" fill="#b7a6dd">Trusting a stranger,</text>
+    <text x="110" y="192" text-anchor="middle" font-size="12.5" fill="#b7a6dd">not a company</text>
+  </g>
+
+  <!-- connecting trust badge -->
+  <path d="M440 400 H 760" stroke="#a78bfa" stroke-width="2.5" stroke-dasharray="2 8" opacity="0.6"/>
+  <g transform="translate(600,400)" filter="url(#chipShadow)">
+    <circle r="52" fill="url(#pill)"/>
+    <path d="M-16 0 l10 12 l22 -26" stroke="#1e0b3d" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="600" y="480" text-anchor="middle" font-size="13.5" font-weight="700" fill="#e7dcff">Identity verified</text>
+
+  <g transform="translate(430,540)">
+    <rect width="150" height="42" rx="21" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.16"/>
+    <text x="75" y="27" font-size="14" font-weight="600" fill="#e7dcff" text-anchor="middle">Two-way reviews</text>
+    <g transform="translate(170,0)"><rect width="170" height="42" rx="21" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.16"/><text x="85" y="27" font-size="14" font-weight="600" fill="#e7dcff" text-anchor="middle">Escrow payments</text></g>
+  </g>
+</svg>

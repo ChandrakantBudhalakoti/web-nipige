@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <radialGradient id="cv" cx="50%" cy="0%" r="120%"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef1f8"/></radialGradient>
+    <linearGradient id="nip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2c3b6b"/><stop offset="1" stop-color="#1a2445"/></linearGradient>
+    <filter id="sc" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#1c2748" flood-opacity="0.12"/></filter>
+    <filter id="scN" x="-50%" y="-50%" width="200%" height="220%"><feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#1a2445" flood-opacity="0.30"/></filter>
+  </defs>
+  <rect width="1200" height="560" fill="url(#cv)"/>
+  <text x="72" y="76" font-size="33" font-weight="800" fill="#0f1729" letter-spacing="-.6">Food delivery app development: build vs. no-code</text>
+  <text x="72" y="108" font-size="17" fill="#6b7280">The same branded marketplace — three ways to get it</text>
+
+  <!-- Card 1: dev company -->
+  <g filter="url(#sc)"><rect x="72" y="150" width="336" height="360" rx="20" fill="#ffffff" stroke="#eaeef6"/></g>
+  <text x="104" y="200" font-size="20" font-weight="800" fill="#0f1729">Hire a dev company</text>
+  <text x="104" y="224" font-size="13.5" fill="#8a91a6">Custom build from scratch</text>
+  <text x="104" y="290" font-size="38" font-weight="800" fill="#0f1729">$20k–$300k+</text>
+  <text x="104" y="316" font-size="14" fill="#8a91a6">upfront build cost</text>
+  <line x1="104" y1="340" x2="376" y2="340" stroke="#eef0f6"/>
+  <g font-size="15" fill="#4b5268">
+    <g transform="translate(104,368)"><circle cx="9" cy="-4" r="9" fill="#f3f4f8"/><line x1="5" y1="-4" x2="13" y2="-4" stroke="#9aa2bd" stroke-width="2"/><text x="30" y="1">4–9 months to launch</text></g>
+    <g transform="translate(104,404)"><circle cx="9" cy="-4" r="9" fill="#f3f4f8"/><line x1="5" y1="-4" x2="13" y2="-4" stroke="#9aa2bd" stroke-width="2"/><text x="30" y="1">You own all maintenance</text></g>
+    <g transform="translate(104,440)"><circle cx="9" cy="-4" r="9" fill="#f3f4f8"/><line x1="5" y1="-4" x2="13" y2="-4" stroke="#9aa2bd" stroke-width="2"/><text x="30" y="1">Every change via developers</text></g>
+  </g>
+
+  <!-- Card 2: generic builder -->
+  <g filter="url(#sc)"><rect x="432" y="150" width="336" height="360" rx="20" fill="#ffffff" stroke="#eaeef6"/></g>
+  <text x="464" y="200" font-size="20" font-weight="800" fill="#0f1729">Generic builder</text>
+  <text x="464" y="224" font-size="13.5" fill="#8a91a6">Sharetribe / Bubble, DIY</text>
+  <text x="464" y="290" font-size="38" font-weight="800" fill="#0f1729">Sub + time</text>
+  <text x="464" y="316" font-size="14" fill="#8a91a6">your build hours add up</text>
+  <line x1="464" y1="340" x2="736" y2="340" stroke="#eef0f6"/>
+  <g font-size="15" fill="#4b5268">
+    <g transform="translate(464,368)"><circle cx="9" cy="-4" r="9" fill="#f3f4f8"/><line x1="5" y1="-4" x2="13" y2="-4" stroke="#9aa2bd" stroke-width="2"/><text x="30" y="1">Weeks–months of DIY</text></g>
+    <g transform="translate(464,404)"><circle cx="9" cy="-4" r="9" fill="#f3f4f8"/><line x1="5" y1="-4" x2="13" y2="-4" stroke="#9aa2bd" stroke-width="2"/><text x="30" y="1">You assemble the pieces</text></g>
+    <g transform="translate(464,440)"><circle cx="9" cy="-4" r="9" fill="#f3f4f8"/><line x1="5" y1="-4" x2="13" y2="-4" stroke="#9aa2bd" stroke-width="2"/><text x="30" y="1">Not built for food delivery</text></g>
+  </g>
+
+  <!-- Card 3: Nipige (highlight) -->
+  <g filter="url(#scN)"><rect x="792" y="134" width="336" height="392" rx="22" fill="url(#nip)"/></g>
+  <rect x="792" y="134" width="336" height="6" rx="3" fill="#ff6a3d"/>
+  <g transform="translate(1096,168)"><rect x="-96" y="-14" width="96" height="26" rx="13" fill="#ff6a3d"/><text x="-48" y="4" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">RECOMMENDED</text></g>
+  <text x="824" y="204" font-size="20" font-weight="800" fill="#ffffff">No-code platform</text>
+  <text x="824" y="228" font-size="13.5" fill="#b9c3e2">Nipige — managed &amp; branded</text>
+  <text x="824" y="296" font-size="38" font-weight="800" fill="#ffffff">$899<tspan font-size="18" font-weight="600" fill="#b9c3e2">/mo</tspan></text>
+  <text x="824" y="322" font-size="14" fill="#b9c3e2">flat — $0 platform fees</text>
+  <line x1="824" y1="348" x2="1096" y2="348" stroke="#3c4a7a"/>
+  <g font-size="15" fill="#e7ecf9">
+    <g transform="translate(824,376)"><circle cx="9" cy="-4" r="9" fill="#2f9e6e"/><path d="M5 -4 l3 3 l6 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="30" y="1">Live in 14 days</text></g>
+    <g transform="translate(824,412)"><circle cx="9" cy="-4" r="9" fill="#2f9e6e"/><path d="M5 -4 l3 3 l6 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="30" y="1">4 branded apps + dispatch</text></g>
+    <g transform="translate(824,448)"><circle cx="9" cy="-4" r="9" fill="#2f9e6e"/><path d="M5 -4 l3 3 l6 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="30" y="1">Managed — no dev team</text></g>
+    <g transform="translate(824,484)"><circle cx="9" cy="-4" r="9" fill="#2f9e6e"/><path d="M5 -4 l3 3 l6 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="30" y="1">You keep your commission</text></g>
+  </g>
+
+  <text x="72" y="546" font-size="13" fill="#9aa2bd">Cost and timeline figures are general market ranges.</text>
+  <text x="1128" y="546" font-size="13" fill="#aeb4c7" text-anchor="end">nipige.com</text>
+</svg>

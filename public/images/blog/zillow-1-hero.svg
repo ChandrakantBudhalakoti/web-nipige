@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" preserveAspectRatio="xMidYMid meet" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1226"/><stop offset="0.55" stop-color="#141f42"/><stop offset="1" stop-color="#1b2a54"/></linearGradient>
+    <radialGradient id="gB" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3f6fe0" stop-opacity="0.55"/><stop offset="1" stop-color="#3f6fe0" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gP" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#8B5CF6" stop-opacity="0.4"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#818cf8"/><stop offset="1" stop-color="#5b6fe0"/></linearGradient>
+    <linearGradient id="barA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9ab6ff"/><stop offset="1" stop-color="#5b7de0"/></linearGradient>
+    <linearGradient id="barB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7ad0a8"/><stop offset="1" stop-color="#39a37a"/></linearGradient>
+    <linearGradient id="barC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb27a"/><stop offset="1" stop-color="#ff7a59"/></linearGradient>
+    <linearGradient id="barD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c7b6ff"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+    <linearGradient id="cardsheen" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+    <filter id="blurL" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="60"/></filter>
+    <filter id="cardShadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="26" stdDeviation="42" flood-color="#03060f" flood-opacity="0.55"/></filter>
+    <filter id="chipShadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#03060f" flood-opacity="0.5"/></filter>
+    <clipPath id="cardClip"><rect x="628" y="118" width="494" height="480" rx="24"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <circle cx="1015" cy="165" r="290" fill="url(#gB)" filter="url(#blurL)"/>
+  <circle cx="865" cy="690" r="265" fill="url(#gP)" filter="url(#blurL)"/>
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1"><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="400" x2="1200" y2="400"/><line x1="0" y1="570" x2="1200" y2="570"/></g>
+
+  <text x="80" y="196" font-size="15" font-weight="700" letter-spacing="4" fill="#a5b4fc">ZILLOW BUSINESS MODEL &#183; 2026</text>
+  <text x="78" y="284" font-size="54" font-weight="800" fill="#ffffff" letter-spacing="-2">Free to browse,</text>
+  <text x="78" y="352" font-size="54" font-weight="800" fill="#ffffff" letter-spacing="-2">paid to <tspan fill="#a5b4fc">reach</tspan></text>
+  <text x="80" y="412" font-size="21" fill="#c2cbe6">Agents, landlords, and lenders pay for access</text>
+  <text x="80" y="442" font-size="21" fill="#c2cbe6">to the buyers and renters already browsing.</text>
+
+  <g transform="translate(80,490)">
+    <rect width="176" height="48" rx="24" fill="url(#pill)" filter="url(#chipShadow)"/>
+    <text x="88" y="30" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">$2.6B revenue &#8217;25</text>
+    <g transform="translate(192,0)"><rect width="168" height="48" rx="24" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/><text x="84" y="30" font-size="15" font-weight="600" fill="#e7ecfa" text-anchor="middle">+16% YoY</text></g>
+  </g>
+
+  <text x="80" y="620" font-size="14" fill="#6f7aa0">Source: Zillow Group FY2025 results, via HousingWire.</text>
+
+  <!-- RIGHT: segment card -->
+  <g filter="url(#cardShadow)"><rect x="628" y="118" width="494" height="480" rx="24" fill="#f7f8fc"/></g>
+  <g clip-path="url(#cardClip)">
+    <rect x="628" y="118" width="494" height="72" fill="#ffffff"/>
+    <rect x="628" y="118" width="494" height="480" fill="url(#cardsheen)" opacity="0.5"/>
+  </g>
+  <circle cx="666" cy="154" r="16" fill="#eef0ff"/><text x="666" y="161" font-size="16" text-anchor="middle">&#127968;</text>
+  <text x="696" y="148" font-size="12" font-weight="700" letter-spacing="1.5" fill="#8a91a6">FY2025 REVENUE BY SEGMENT</text>
+  <text x="696" y="170" font-size="18" font-weight="800" fill="#1e2436">Zillow Group, $2.6B total</text>
+  <line x1="652" y1="194" x2="1098" y2="194" stroke="#e7ebf4"/>
+
+  <g>
+    <g stroke="#eef1f8" stroke-width="1"><line x1="680" y1="290" x2="1070" y2="290"/><line x1="680" y1="360" x2="1070" y2="360"/><line x1="680" y1="430" x2="1070" y2="430"/></g>
+    <line x1="680" y1="486" x2="1070" y2="486" stroke="#d7dcea" stroke-width="1.5"/>
+
+    <rect x="700" y="256" width="76" height="230" rx="8" fill="url(#barA)"/>
+    <text x="738" y="244" font-size="16" font-weight="800" fill="#1e2436" text-anchor="middle">$1.7B</text>
+    <text x="738" y="508" font-size="12.5" font-weight="700" fill="#5b6480" text-anchor="middle">Residential</text>
+    <text x="738" y="524" font-size="11" fill="#98a1b8" text-anchor="middle">Premier Agent</text>
+
+    <rect x="806" y="406" width="76" height="80" rx="8" fill="url(#barB)"/>
+    <text x="844" y="394" font-size="16" font-weight="800" fill="#1e2436" text-anchor="middle">$630M</text>
+    <text x="844" y="508" font-size="12.5" font-weight="700" fill="#5b6480" text-anchor="middle">Rentals</text>
+    <text x="844" y="524" font-size="11" fill="#98a1b8" text-anchor="middle">+39% YoY</text>
+
+    <rect x="912" y="440" width="76" height="46" rx="8" fill="url(#barC)"/>
+    <text x="950" y="428" font-size="16" font-weight="800" fill="#1e2436" text-anchor="middle">Mortgages</text>
+    <text x="950" y="508" font-size="12.5" font-weight="700" fill="#5b6480" text-anchor="middle">Home Loans</text>
+    <text x="950" y="524" font-size="11" fill="#98a1b8" text-anchor="middle">Originations</text>
+
+    <rect x="1018" y="458" width="52" height="28" rx="8" fill="url(#barD)"/>
+    <text x="1044" y="446" font-size="13" font-weight="800" fill="#1e2436" text-anchor="middle">Other</text>
+    <text x="1044" y="508" font-size="12.5" font-weight="700" fill="#5b6480" text-anchor="middle">Display ads</text>
+  </g>
+
+  <rect x="652" y="540" width="446" height="50" rx="12" fill="#eef0ff" stroke="#c7d0fa"/>
+  <rect x="670" y="553" width="26" height="26" rx="7" fill="url(#pill)"/>
+  <text x="683" y="571" font-size="14" text-anchor="middle" fill="#fff">$</text>
+  <text x="710" y="561" font-size="13.5" font-weight="800" fill="#4338ca">Net income: $23M in 2025</text>
+  <text x="710" y="579" font-size="12" fill="#5b5a8a">vs. a $112M net loss in 2024</text>
+</svg>

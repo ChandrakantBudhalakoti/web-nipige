@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" preserveAspectRatio="xMidYMid meet" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1226"/><stop offset="0.6" stop-color="#141f42"/><stop offset="1" stop-color="#1b2a54"/></linearGradient>
+    <radialGradient id="g2B" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3f6fe0" stop-opacity="0.4"/><stop offset="1" stop-color="#3f6fe0" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2O" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff6a3d" stop-opacity="0.4"/><stop offset="1" stop-color="#ff6a3d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="cardG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#131d38"/><stop offset="1" stop-color="#0d152c"/></linearGradient>
+    <linearGradient id="nb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ab6ff"/><stop offset="1" stop-color="#5b7de0"/></linearGradient>
+    <linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7ad0a8"/><stop offset="1" stop-color="#39a37a"/></linearGradient>
+    <linearGradient id="no" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb27a"/><stop offset="1" stop-color="#ff7a59"/></linearGradient>
+    <filter id="blur2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="55"/></filter>
+    <filter id="cs2" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="16" stdDeviation="26" flood-color="#03060f" flood-opacity="0.5"/></filter>
+  </defs>
+
+  <rect width="1200" height="620" fill="url(#bg2)"/>
+  <circle cx="180" cy="110" r="240" fill="url(#g2B)" filter="url(#blur2)"/>
+  <circle cx="1030" cy="560" r="250" fill="url(#g2O)" filter="url(#blur2)"/>
+
+  <text x="80" y="82" font-size="15" font-weight="700" letter-spacing="4" fill="#ff9166">THE PLAYBOOK</text>
+  <text x="78" y="128" font-size="38" font-weight="800" fill="#ffffff" letter-spacing="-1">7 steps to start an online marketplace</text>
+
+  <!-- Row 1: steps 1-4 -->
+  <!-- card template positions -->
+  <g>
+    <!-- 1 -->
+    <g filter="url(#cs2)"><rect x="72" y="176" width="258" height="150" rx="16" fill="url(#cardG)" stroke="#243052"/></g>
+    <circle cx="106" cy="212" r="20" fill="url(#nb)"/><text x="106" y="219" font-size="18" font-weight="800" fill="#0b1226" text-anchor="middle">1</text>
+    <text x="96" y="264" font-size="17" font-weight="800" fill="#ffffff">Pick a niche</text>
+    <text x="96" y="290" font-size="13.5" fill="#9fb0d0">Validate demand in one</text>
+    <text x="96" y="308" font-size="13.5" fill="#9fb0d0">tight category and zone.</text>
+    <!-- 2 -->
+    <g filter="url(#cs2)"><rect x="348" y="176" width="258" height="150" rx="16" fill="url(#cardG)" stroke="#243052"/></g>
+    <circle cx="382" cy="212" r="20" fill="url(#ng)"/><text x="382" y="219" font-size="18" font-weight="800" fill="#0b1226" text-anchor="middle">2</text>
+    <text x="372" y="264" font-size="17" font-weight="800" fill="#ffffff">Choose a model</text>
+    <text x="372" y="290" font-size="13.5" fill="#9fb0d0">Commission, subscription,</text>
+    <text x="372" y="308" font-size="13.5" fill="#9fb0d0">or listing fees.</text>
+    <!-- 3 -->
+    <g filter="url(#cs2)"><rect x="624" y="176" width="258" height="150" rx="16" fill="url(#cardG)" stroke="#243052"/></g>
+    <circle cx="658" cy="212" r="20" fill="url(#no)"/><text x="658" y="219" font-size="18" font-weight="800" fill="#2a1408" text-anchor="middle">3</text>
+    <text x="648" y="264" font-size="17" font-weight="800" fill="#ffffff">Build it</text>
+    <text x="648" y="290" font-size="13.5" fill="#9fb0d0">Custom, no-code, or</text>
+    <text x="648" y="308" font-size="13.5" fill="#9fb0d0">white-label platform.</text>
+    <!-- 4 -->
+    <g filter="url(#cs2)"><rect x="900" y="176" width="258" height="150" rx="16" fill="url(#cardG)" stroke="#243052"/></g>
+    <circle cx="934" cy="212" r="20" fill="url(#nb)"/><text x="934" y="219" font-size="18" font-weight="800" fill="#0b1226" text-anchor="middle">4</text>
+    <text x="924" y="264" font-size="17" font-weight="800" fill="#ffffff">Solve cold start</text>
+    <text x="924" y="290" font-size="13.5" fill="#9fb0d0">Seed one side first so the</text>
+    <text x="924" y="308" font-size="13.5" fill="#9fb0d0">marketplace looks alive.</text>
+  </g>
+
+  <!-- Row 2: steps 5-7 (centered) -->
+  <g>
+    <!-- 5 -->
+    <g filter="url(#cs2)"><rect x="195" y="356" width="258" height="150" rx="16" fill="url(#cardG)" stroke="#243052"/></g>
+    <circle cx="229" cy="392" r="20" fill="url(#ng)"/><text x="229" y="399" font-size="18" font-weight="800" fill="#0b1226" text-anchor="middle">5</text>
+    <text x="219" y="444" font-size="17" font-weight="800" fill="#ffffff">Recruit sellers</text>
+    <text x="219" y="470" font-size="13.5" fill="#9fb0d0">By hand, hand-picked,</text>
+    <text x="219" y="488" font-size="13.5" fill="#9fb0d0">onboarded for them.</text>
+    <!-- 6 -->
+    <g filter="url(#cs2)"><rect x="471" y="356" width="258" height="150" rx="16" fill="url(#cardG)" stroke="#243052"/></g>
+    <circle cx="505" cy="392" r="20" fill="url(#no)"/><text x="505" y="399" font-size="18" font-weight="800" fill="#2a1408" text-anchor="middle">6</text>
+    <text x="495" y="444" font-size="17" font-weight="800" fill="#ffffff">Keep them active</text>
+    <text x="495" y="470" font-size="13.5" fill="#9fb0d0">Pay on time and stop</text>
+    <text x="495" y="488" font-size="13.5" fill="#9fb0d0">silent supply-side churn.</text>
+    <!-- 7 -->
+    <g filter="url(#cs2)"><rect x="747" y="356" width="258" height="150" rx="16" fill="url(#cardG)" stroke="#243052"/></g>
+    <circle cx="781" cy="392" r="20" fill="url(#nb)"/><text x="781" y="399" font-size="18" font-weight="800" fill="#0b1226" text-anchor="middle">7</text>
+    <text x="771" y="444" font-size="17" font-weight="800" fill="#ffffff">Launch and grow</text>
+    <text x="771" y="470" font-size="13.5" fill="#9fb0d0">Build liquidity in one</text>
+    <text x="771" y="488" font-size="13.5" fill="#9fb0d0">market, then repeat.</text>
+  </g>
+
+  <text x="600" y="560" font-size="14" font-weight="600" fill="#6f7aa0" text-anchor="middle">The build is quick. Recruiting and keeping sellers is the real work.</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" preserveAspectRatio="xMidYMid meet" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1226"/><stop offset="0.55" stop-color="#141f42"/><stop offset="1" stop-color="#1b2a54"/></linearGradient>
+    <radialGradient id="gB" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3f6fe0" stop-opacity="0.55"/><stop offset="1" stop-color="#3f6fe0" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gO" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff6a3d" stop-opacity="0.5"/><stop offset="1" stop-color="#ff6a3d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff8a5c"/><stop offset="1" stop-color="#ff6a3d"/></linearGradient>
+    <linearGradient id="cust" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ab6ff"/><stop offset="1" stop-color="#5b7de0"/></linearGradient>
+    <linearGradient id="rest" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7ad0a8"/><stop offset="1" stop-color="#39a37a"/></linearGradient>
+    <linearGradient id="driv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb27a"/><stop offset="1" stop-color="#ff7a59"/></linearGradient>
+    <linearGradient id="adm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d3a0ff"/><stop offset="1" stop-color="#9a6ae0"/></linearGradient>
+    <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb27a"/><stop offset="1" stop-color="#ff6a3d"/></linearGradient>
+    <filter id="blurL" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="60"/></filter>
+    <filter id="cardShadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="26" stdDeviation="42" flood-color="#03060f" flood-opacity="0.55"/></filter>
+    <filter id="chipShadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#03060f" flood-opacity="0.5"/></filter>
+    <clipPath id="cardClip"><rect x="648" y="118" width="474" height="480" rx="24"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <circle cx="1015" cy="165" r="290" fill="url(#gB)" filter="url(#blurL)"/>
+  <circle cx="865" cy="690" r="265" fill="url(#gO)" filter="url(#blurL)"/>
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1"><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="400" x2="1200" y2="400"/><line x1="0" y1="570" x2="1200" y2="570"/></g>
+
+  <!-- LEFT copy -->
+  <text x="80" y="188" font-size="15" font-weight="700" letter-spacing="3" fill="#ff9166">BUILD AN APP LIKE DOORDASH &#183; 2026</text>
+  <text x="78" y="272" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-2">Your own delivery</text>
+  <text x="78" y="336" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-2">app in <tspan fill="#7fa6ff">14 days</tspan></text>
+  <text x="80" y="396" font-size="21" fill="#c2cbe6">Four connected apps, no code, and no</text>
+  <text x="80" y="426" font-size="21" fill="#c2cbe6">clone script to inherit and maintain.</text>
+
+  <g transform="translate(80,474)">
+    <rect width="150" height="48" rx="24" fill="url(#pill)" filter="url(#chipShadow)"/>
+    <text x="75" y="30" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">no code</text>
+    <g transform="translate(166,0)"><rect width="184" height="48" rx="24" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/><circle cx="30" cy="24" r="8" fill="none" stroke="#7ad0a8" stroke-width="2.4"/><path d="M26 24 l3 3 l6 -7" fill="none" stroke="#7ad0a8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><text x="106" y="29" font-size="15" font-weight="600" fill="#e7ecfa" text-anchor="middle">no clone script</text></g>
+  </g>
+
+  <text x="80" y="600" font-size="14" fill="#6f7aa0">DoorDash charges restaurants 15 to 30 percent per order. Your own app keeps the margin.</text>
+
+  <!-- RIGHT: 4-app model card -->
+  <g filter="url(#cardShadow)"><rect x="648" y="118" width="474" height="480" rx="24" fill="#f7f8fc"/></g>
+  <g clip-path="url(#cardClip)"><rect x="648" y="118" width="474" height="72" fill="#ffffff"/></g>
+  <circle cx="686" cy="154" r="16" fill="#eef1fb"/><path d="M680 158 l0 -6 a6 6 0 0 1 12 0 l0 6 M683 152 a3 3 0 1 1 6 0" fill="none" stroke="#5b7de0" stroke-width="2"/>
+  <text x="716" y="150" font-size="12" font-weight="700" letter-spacing="1.5" fill="#8a91a6">ONE PLATFORM, FOUR APPS</text>
+  <text x="716" y="172" font-size="18" font-weight="800" fill="#1e2436">Customer, restaurant, driver, admin</text>
+  <line x1="672" y1="194" x2="1098" y2="194" stroke="#e7ebf4"/>
+
+  <!-- central hub -->
+  <circle cx="885" cy="378" r="44" fill="url(#hub)"/>
+  <circle cx="885" cy="378" r="44" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="885" y="374" font-size="12" font-weight="800" fill="#2a1408" text-anchor="middle">YOUR</text>
+  <text x="885" y="390" font-size="12" font-weight="800" fill="#2a1408" text-anchor="middle">APP</text>
+
+  <!-- connectors -->
+  <g stroke="#cdd6ea" stroke-width="2" fill="none">
+    <path d="M770 268 C 830 300 840 340 850 356"/>
+    <path d="M1000 268 C 940 300 930 340 920 356"/>
+    <path d="M770 488 C 830 456 840 416 850 400"/>
+    <path d="M1000 488 C 940 456 930 416 920 400"/>
+  </g>
+
+  <!-- 4 app nodes -->
+  <g>
+    <rect x="700" y="234" width="128" height="52" rx="12" fill="url(#cust)"/><text x="764" y="258" font-size="13" font-weight="800" fill="#0e1b3a" text-anchor="middle">Customer</text><text x="764" y="275" font-size="11" font-weight="600" fill="#12223f" text-anchor="middle">order &amp; pay</text>
+    <rect x="942" y="234" width="128" height="52" rx="12" fill="url(#rest)"/><text x="1006" y="258" font-size="13" font-weight="800" fill="#0e2a20" text-anchor="middle">Restaurant</text><text x="1006" y="275" font-size="11" font-weight="600" fill="#0e2a20" text-anchor="middle">menu &amp; orders</text>
+    <rect x="700" y="470" width="128" height="52" rx="12" fill="url(#driv)"/><text x="764" y="494" font-size="13" font-weight="800" fill="#2a1408" text-anchor="middle">Driver</text><text x="764" y="511" font-size="11" font-weight="600" fill="#2a1408" text-anchor="middle">deliver</text>
+    <rect x="942" y="470" width="128" height="52" rx="12" fill="url(#adm)"/><text x="1006" y="494" font-size="13" font-weight="800" fill="#20103a" text-anchor="middle">Admin</text><text x="1006" y="511" font-size="11" font-weight="600" fill="#20103a" text-anchor="middle">zones &amp; payouts</text>
+  </g>
+
+  <rect x="672" y="548" width="426" height="34" rx="10" fill="#fff2ec" stroke="#ffd6c2"/>
+  <text x="885" y="570" font-size="13" font-weight="600" fill="#c2410c" text-anchor="middle">One system: order flows customer to kitchen to driver to payout.</text>
+</svg>

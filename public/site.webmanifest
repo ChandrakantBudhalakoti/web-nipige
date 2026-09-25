@@ -1,0 +1,13 @@
+{
+  "name": "Nipige - No-Code Marketplace Builder",
+  "short_name": "Nipige",
+  "description": "Launch a no-code marketplace or platform in 14 days with $0 transaction fees.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080E1A",
+  "theme_color": "#06B6D4",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

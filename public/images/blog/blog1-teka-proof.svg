@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="tbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1226"/><stop offset="1" stop-color="#1b2a54"/></linearGradient>
+    <radialGradient id="tg1" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3f6fe0" stop-opacity="0.5"/><stop offset="1" stop-color="#3f6fe0" stop-opacity="0"/></radialGradient>
+    <radialGradient id="tg2" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff6a3d" stop-opacity="0.45"/><stop offset="1" stop-color="#ff6a3d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="tstat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.03"/></linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5b8bff"/><stop offset="1" stop-color="#37c98f"/></linearGradient>
+    <filter id="tblur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="55"/></filter>
+  </defs>
+  <rect width="1200" height="440" fill="url(#tbg)"/>
+  <circle cx="1020" cy="110" r="230" fill="url(#tg1)" filter="url(#tblur)"/>
+  <circle cx="180" cy="420" r="200" fill="url(#tg2)" filter="url(#tblur)"/>
+
+  <text x="72" y="90" font-size="14" font-weight="700" letter-spacing="4" fill="#ff9166">PROOF · CUSTOMER STORY</text>
+  <text x="72" y="150" font-size="40" font-weight="800" fill="#ffffff" letter-spacing="-1">Teka runs on Nipige</text>
+  <text x="72" y="188" font-size="18" fill="#c2cbe6">A hyperlocal marketplace built on the same platform,</text>
+  <text x="72" y="214" font-size="18" fill="#c2cbe6">dispatch and payout engine described here.</text>
+
+  <!-- stat cards -->
+  <g transform="translate(72,262)">
+    <rect width="250" height="120" rx="18" fill="url(#tstat)" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="24" y="66" font-size="46" font-weight="800" fill="#ffffff">1M+</text>
+    <text x="24" y="96" font-size="15" fill="#b9c3e2">shoppers</text>
+  </g>
+  <g transform="translate(342,262)">
+    <rect width="250" height="120" rx="18" fill="url(#tstat)" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="24" y="66" font-size="46" font-weight="800" fill="#ffffff">15,000+</text>
+    <text x="24" y="96" font-size="15" fill="#b9c3e2">partner businesses</text>
+  </g>
+
+  <!-- growth panel -->
+  <g transform="translate(680,150)">
+    <rect width="448" height="232" rx="20" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.10"/>
+    <text x="28" y="46" font-size="15" font-weight="700" fill="#e7ecf9">Orders at scale</text>
+    <text x="28" y="68" font-size="12.5" fill="#8f9bc0">One platform, growing marketplace</text>
+    <!-- bars -->
+    <g>
+      <rect x="40" y="170" width="34" height="30" rx="5" fill="#3f6fe0" opacity="0.5"/>
+      <rect x="96" y="150" width="34" height="50" rx="5" fill="#3f6fe0" opacity="0.6"/>
+      <rect x="152" y="126" width="34" height="74" rx="5" fill="#4b7bf0" opacity="0.7"/>
+      <rect x="208" y="102" width="34" height="98" rx="5" fill="#5b8bff" opacity="0.8"/>
+      <rect x="264" y="120" width="34" height="80" rx="5" fill="#37c98f" opacity="0.85"/>
+      <rect x="320" y="92" width="34" height="108" rx="5" fill="#37c98f"/>
+      <rect x="376" y="104" width="34" height="96" rx="5" fill="#3fd39a"/>
+    </g>
+    <!-- trend line over bars -->
+    <path d="M57 176 L113 156 L169 132 L225 108 L281 126 L337 98 L393 110" fill="none" stroke="url(#spark)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="393" cy="110" r="5" fill="#3fd39a"/>
+  </g>
+
+  <text x="1128" y="416" font-size="13" fill="#6f7aa0" text-anchor="end">Source: Teka case study · nipige.com/case-studies/teka</text>
+</svg>

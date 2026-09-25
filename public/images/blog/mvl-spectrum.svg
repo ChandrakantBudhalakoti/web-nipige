@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" preserveAspectRatio="xMidYMid meet" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1226"/><stop offset="0.6" stop-color="#141f42"/><stop offset="1" stop-color="#1b2a54"/></linearGradient>
+    <radialGradient id="g2B" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3f6fe0" stop-opacity="0.4"/><stop offset="1" stop-color="#3f6fe0" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2O" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff6a3d" stop-opacity="0.4"/><stop offset="1" stop-color="#ff6a3d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="track" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5b7de0"/><stop offset="0.5" stop-color="#7ad0a8"/><stop offset="1" stop-color="#ff7a59"/></linearGradient>
+    <linearGradient id="cL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#131d38"/><stop offset="1" stop-color="#0d152c"/></linearGradient>
+    <filter id="blur2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="55"/></filter>
+    <filter id="cs2" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="16" stdDeviation="26" flood-color="#03060f" flood-opacity="0.5"/></filter>
+  </defs>
+
+  <rect width="1200" height="460" fill="url(#bg2)"/>
+  <circle cx="180" cy="90" r="220" fill="url(#g2B)" filter="url(#blur2)"/>
+  <circle cx="1030" cy="420" r="230" fill="url(#g2O)" filter="url(#blur2)"/>
+
+  <text x="80" y="70" font-size="15" font-weight="700" letter-spacing="4" fill="#ff9166">THE MARKETPLACE SPECTRUM</text>
+  <text x="78" y="112" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-1">From listing to managed</text>
+
+  <!-- track -->
+  <rect x="150" y="250" width="900" height="12" rx="6" fill="url(#track)"/>
+  <circle cx="150" cy="256" r="9" fill="#5b7de0" stroke="#0b1226" stroke-width="3"/>
+  <circle cx="600" cy="256" r="9" fill="#39a37a" stroke="#0b1226" stroke-width="3"/>
+  <circle cx="1050" cy="256" r="9" fill="#ff7a59" stroke="#0b1226" stroke-width="3"/>
+
+  <!-- end labels -->
+  <text x="150" y="300" font-size="14" font-weight="700" fill="#9ab6ff" text-anchor="middle">hands-off</text>
+  <text x="1050" y="300" font-size="14" font-weight="700" fill="#ffb27a" text-anchor="middle">hands-on</text>
+
+  <!-- 3 cards -->
+  <g filter="url(#cs2)"><rect x="80" y="150" width="300" height="86" rx="14" fill="url(#cL)" stroke="#243052"/></g>
+  <text x="100" y="182" font-size="13" font-weight="800" letter-spacing="1.5" fill="#9ab6ff">LISTING</text>
+  <text x="100" y="206" font-size="14" fill="#cfd8ee">Connect and step back</text>
+  <text x="100" y="226" font-size="12.5" fill="#7f8bab">Craigslist, eBay, Zillow</text>
+
+  <g filter="url(#cs2)"><rect x="450" y="150" width="300" height="86" rx="14" fill="url(#cL)" stroke="#255041"/></g>
+  <text x="470" y="182" font-size="13" font-weight="800" letter-spacing="1.5" fill="#7ad0a8">LIGHTLY MANAGED</text>
+  <text x="470" y="206" font-size="14" fill="#cfd8ee">Vetting and in-app payment</text>
+  <text x="470" y="226" font-size="12.5" fill="#7f8bab">Airbnb, Uber, DoorDash</text>
+
+  <g filter="url(#cs2)"><rect x="820" y="150" width="300" height="86" rx="14" fill="url(#cL)" stroke="#4a3325"/></g>
+  <text x="840" y="182" font-size="13" font-weight="800" letter-spacing="1.5" fill="#ffb27a">FULLY MANAGED</text>
+  <text x="840" y="206" font-size="14" fill="#cfd8ee">Curate and run the sale</text>
+  <text x="840" y="226" font-size="12.5" fill="#7f8bab">Opendoor, thredUP</text>
+
+  <!-- connectors from card to track -->
+  <line x1="150" y1="236" x2="150" y2="250" stroke="#5b7de0" stroke-width="2"/>
+  <line x1="600" y1="236" x2="600" y2="250" stroke="#39a37a" stroke-width="2"/>
+  <line x1="1050" y1="236" x2="1050" y2="250" stroke="#ff7a59" stroke-width="2"/>
+
+  <text x="600" y="360" font-size="15" font-weight="600" fill="#a9b6d4" text-anchor="middle">Many marketplaces launch as a listing model, then add managed features as they grow.</text>
+</svg>

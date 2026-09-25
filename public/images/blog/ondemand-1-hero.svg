@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" preserveAspectRatio="xMidYMid meet" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071a1e"/><stop offset="0.55" stop-color="#0a2730"/><stop offset="1" stop-color="#0e3742"/></linearGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#06B6D4" stop-opacity="0.5"/><stop offset="1" stop-color="#06B6D4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#0891B2"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f2a30"/><stop offset="1" stop-color="#0a1e23"/></linearGradient>
+    <filter id="blurL" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="60"/></filter>
+    <filter id="chipShadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#03060f" flood-opacity="0.5"/></filter>
+    <filter id="cardShadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#020a0c" flood-opacity="0.5"/></filter>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <circle cx="950" cy="180" r="300" fill="url(#gC)" filter="url(#blurL)"/>
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1"><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="400" x2="1200" y2="400"/></g>
+
+  <text x="80" y="120" font-size="15" font-weight="700" letter-spacing="4" fill="#67e8f9">ON-DEMAND SERVICE APP &#183; 2026</text>
+  <text x="78" y="196" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-1.5">Requested now.</text>
+  <text x="78" y="256" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-1.5">Matched in <tspan fill="#67e8f9">seconds.</tspan></text>
+
+  <g transform="translate(80,300)">
+    <rect width="220" height="46" rx="23" fill="url(#pill)" filter="url(#chipShadow)"/>
+    <text x="110" y="29" font-size="16" font-weight="700" fill="#04222b" text-anchor="middle">Live dispatch loop</text>
+  </g>
+
+  <!-- 5-step dispatch loop -->
+  <g transform="translate(80,400)">
+    <g>
+      <circle cx="30" cy="30" r="30" fill="url(#card)" filter="url(#cardShadow)" stroke="#1c4a54"/>
+      <text x="30" y="37" font-size="20" font-weight="800" fill="#67e8f9" text-anchor="middle">1</text>
+    </g>
+    <text x="0" y="86" font-size="15" font-weight="700" fill="#e7f6f8">Request</text>
+
+    <path d="M70 30 H 190" stroke="#1c4a54" stroke-width="3" marker-end="url(#ah)"/>
+    <g transform="translate(200,0)">
+      <circle cx="30" cy="30" r="30" fill="url(#card)" filter="url(#cardShadow)" stroke="#1c4a54"/>
+      <text x="30" y="37" font-size="20" font-weight="800" fill="#67e8f9" text-anchor="middle">2</text>
+    </g>
+    <text x="200" y="86" font-size="15" font-weight="700" fill="#e7f6f8">Match nearby provider</text>
+
+    <path d="M270 30 H 390" stroke="#1c4a54" stroke-width="3"/>
+    <g transform="translate(400,0)">
+      <circle cx="30" cy="30" r="30" fill="url(#card)" filter="url(#cardShadow)" stroke="#1c4a54"/>
+      <text x="30" y="37" font-size="20" font-weight="800" fill="#67e8f9" text-anchor="middle">3</text>
+    </g>
+    <text x="400" y="86" font-size="15" font-weight="700" fill="#e7f6f8">Accept</text>
+
+    <path d="M470 30 H 590" stroke="#1c4a54" stroke-width="3"/>
+    <g transform="translate(600,0)">
+      <circle cx="30" cy="30" r="30" fill="url(#card)" filter="url(#cardShadow)" stroke="#1c4a54"/>
+      <text x="30" y="37" font-size="20" font-weight="800" fill="#67e8f9" text-anchor="middle">4</text>
+    </g>
+    <text x="600" y="86" font-size="15" font-weight="700" fill="#e7f6f8">Live tracking</text>
+
+    <path d="M670 30 H 790" stroke="#1c4a54" stroke-width="3"/>
+    <g transform="translate(800,0)">
+      <circle cx="30" cy="30" r="30" fill="url(#pill)" filter="url(#cardShadow)"/>
+      <text x="30" y="37" font-size="20" font-weight="800" fill="#04222b" text-anchor="middle">5</text>
+    </g>
+    <text x="800" y="86" font-size="15" font-weight="700" fill="#e7f6f8">Complete + pay</text>
+  </g>
+
+  <!-- provider pin cluster -->
+  <g transform="translate(870,150)">
+    <g filter="url(#cardShadow)"><rect x="0" y="0" width="250" height="200" rx="20" fill="url(#card)" stroke="#1c4a54"/></g>
+    <text x="24" y="34" font-size="13" font-weight="700" letter-spacing="1.5" fill="#8ab8bd">NEARBY PROVIDERS</text>
+    <g stroke="#1c4a54" stroke-width="1"><line x1="0" y1="60" x2="250" y2="60"/><line x1="0" y1="110" x2="250" y2="110"/><line x1="0" y1="160" x2="250" y2="160"/><line x1="60" y1="60" x2="60" y2="200"/><line x1="130" y1="60" x2="130" y2="200"/><line x1="190" y1="60" x2="190" y2="200"/></g>
+    <circle cx="40" cy="85" r="9" fill="url(#pill)"/>
+    <circle cx="150" cy="135" r="9" fill="#22d3ee" opacity="0.7"/>
+    <circle cx="90" cy="180" r="9" fill="#22d3ee" opacity="0.5"/>
+    <circle cx="215" cy="90" r="9" fill="#22d3ee" opacity="0.5"/>
+    <circle cx="105" cy="70" r="16" fill="none" stroke="#67e8f9" stroke-width="2" opacity="0.6"/>
+    <text x="140" y="88" font-size="11" fill="#c9edf0">you</text>
+  </g>
+
+  <text x="870" y="386" font-size="14" fill="#7fb3ba">Nearest available provider gets the job first.</text>
+</svg>

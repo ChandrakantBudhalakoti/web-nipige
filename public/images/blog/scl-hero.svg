@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" preserveAspectRatio="xMidYMid meet" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1226"/><stop offset="0.55" stop-color="#141f42"/><stop offset="1" stop-color="#1b2a54"/></linearGradient>
+    <radialGradient id="gB" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3f6fe0" stop-opacity="0.55"/><stop offset="1" stop-color="#3f6fe0" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gO" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff6a3d" stop-opacity="0.5"/><stop offset="1" stop-color="#ff6a3d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff8a5c"/><stop offset="1" stop-color="#ff6a3d"/></linearGradient>
+    <linearGradient id="grn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7ad0a8"/><stop offset="1" stop-color="#39a37a"/></linearGradient>
+    <linearGradient id="cardsheen" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+    <filter id="blurL" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="60"/></filter>
+    <filter id="cardShadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="26" stdDeviation="42" flood-color="#03060f" flood-opacity="0.55"/></filter>
+    <filter id="chipShadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#03060f" flood-opacity="0.5"/></filter>
+    <clipPath id="cardClip"><rect x="648" y="118" width="474" height="480" rx="24"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <circle cx="1015" cy="165" r="290" fill="url(#gB)" filter="url(#blurL)"/>
+  <circle cx="865" cy="690" r="265" fill="url(#gO)" filter="url(#blurL)"/>
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1"><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="400" x2="1200" y2="400"/><line x1="0" y1="570" x2="1200" y2="570"/></g>
+
+  <text x="80" y="196" font-size="15" font-weight="700" letter-spacing="4" fill="#ff9166">SCALING &#183; LIQUIDITY &#183; 2026</text>
+  <text x="78" y="284" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-2">How to scale</text>
+  <text x="78" y="348" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-2">a <tspan fill="#7fa6ff">marketplace</tspan></text>
+  <text x="80" y="408" font-size="21" fill="#c2cbe6">It is a liquidity problem, not a traffic problem.</text>
+  <text x="80" y="438" font-size="21" fill="#c2cbe6">Grow the hard side first.</text>
+
+  <g transform="translate(80,486)">
+    <rect width="196" height="48" rx="24" fill="url(#pill)" filter="url(#chipShadow)"/>
+    <text x="98" y="30" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">match, do not just add</text>
+  </g>
+
+  <text x="80" y="600" font-size="14" fill="#6f7aa0">More visitors on a marketplace that cannot fulfil them just makes the leak bigger.</text>
+
+  <g filter="url(#cardShadow)"><rect x="648" y="118" width="474" height="480" rx="24" fill="#f7f8fc"/></g>
+  <g clip-path="url(#cardClip)">
+    <rect x="648" y="118" width="474" height="72" fill="#ffffff"/>
+    <rect x="648" y="118" width="474" height="480" fill="url(#cardsheen)" opacity="0.5"/>
+  </g>
+  <text x="672" y="150" font-size="12" font-weight="700" letter-spacing="1.5" fill="#8a91a6">LIQUIDITY DECIDES SCALE</text>
+  <text x="672" y="172" font-size="18" font-weight="800" fill="#1e2436">Share of buyer requests that match</text>
+  <line x1="672" y1="194" x2="1098" y2="194" stroke="#e7ebf4"/>
+
+  <rect x="672" y="216" width="426" height="104" rx="14" fill="#fdeeea" stroke="#f6d3c6"/>
+  <text x="692" y="250" font-size="26" font-weight="800" fill="#c2410c">Below 30%</text>
+  <text x="692" y="278" font-size="15" font-weight="700" fill="#8a5a48">Broken</text>
+  <text x="692" y="302" font-size="12.5" fill="#9a6a52">Most searches fail. Do not scale demand yet.</text>
+
+  <rect x="672" y="332" width="426" height="104" rx="14" fill="#eef2fb" stroke="#dbe3f3"/>
+  <text x="692" y="366" font-size="26" font-weight="800" fill="#2f4a8a">30 to 60%</text>
+  <text x="692" y="394" font-size="15" font-weight="700" fill="#43506e">Working but fragile</text>
+  <text x="692" y="418" font-size="12.5" fill="#8a93a8">Deepen supply in your core market first.</text>
+
+  <rect x="672" y="448" width="426" height="118" rx="14" fill="#eafaf2" stroke="url(#grn)" stroke-width="2"/>
+  <g transform="translate(980,438)"><rect width="118" height="26" rx="13" fill="url(#grn)"/><text x="59" y="18" font-size="11.5" font-weight="800" fill="#08351f" text-anchor="middle">THE TARGET</text></g>
+  <text x="692" y="486" font-size="26" font-weight="800" fill="#1f8a5e">Above 60%</text>
+  <text x="692" y="514" font-size="15" font-weight="700" fill="#2f6b52">Flywheel starts</text>
+  <text x="692" y="538" font-size="12.5" fill="#3f7a63">Now accelerate demand and replicate to new markets.</text>
+</svg>

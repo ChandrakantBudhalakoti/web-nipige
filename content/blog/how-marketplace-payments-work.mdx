@@ -1,0 +1,95 @@
+---
+title: "How Marketplace Payments Work (2026): Split Payments, Escrow, and Payouts"
+metaTitle: "How Marketplace Payments Work: Split Payments & Payouts"
+description: "How marketplace payments work in 2026: split payments, payout schedules, escrow and hold-and-release, the platform vs the processor (Stripe Connect, Adyen), and what it costs."
+date: "2026-09-14"
+author: "Nipige Team"
+image: "/images/blog/pay-hero.svg"
+imageAlt: "How marketplace payments work: a buyer pays once, the platform splits the money between the seller and itself through a processor like Stripe Connect, and pays the seller out on a schedule, with escrow to hold funds until delivery"
+tags:
+  - marketplace
+  - marketplace-payments
+  - split-payments
+  - payouts
+keywords: ["marketplace payments", "how marketplace payments work", "marketplace split payments", "marketplace payouts", "Stripe Connect marketplace", "marketplace escrow"]
+readingTime: "6 min read"
+faqs:
+  - q: "How do payments work in a marketplace?"
+    a: "The buyer pays once, and the platform splits that payment between the seller and itself, then pays the seller out on a schedule. A payment processor built for platforms, such as Stripe Connect or Adyen for Platforms, collects the money, performs the split, handles identity checks and compliance, and sends the payouts."
+  - q: "What are split payments in a marketplace?"
+    a: "Split payments divide a single charge among the parties at settlement. The seller receives their share and the platform keeps its commission, and the split can be set per transaction so different products or sellers carry different rates. The processor can either pay each party directly or send the whole amount to the platform to distribute."
+  - q: "What is escrow in a marketplace?"
+    a: "Escrow is holding the buyer's money until a condition is met, usually delivery or a completed job, then releasing it to the seller. It builds trust between strangers, since the buyer is protected against non-delivery and the seller knows the funds are waiting. It matters most for higher-value services, rentals, and custom orders."
+  - q: "When do sellers get paid on a marketplace?"
+    a: "On the schedule you choose. Payouts can be instant, daily, weekly, monthly, or a set number of days after the order. Delaying payouts protects the platform against refunds and disputes, while instant payouts are a strong perk for small-business sellers who need cash flow."
+  - q: "What does it cost to accept payments on a marketplace?"
+    a: "Two separate costs. The payment processing fee, commonly around 2.9 percent plus a small fixed fee per transaction, is charged by the processor and applies everywhere. The platform fee is separate: some marketplace software takes a percentage of every sale on top of a subscription. Nipige charges $0 platform transaction fees, so you pay only the processor's rate."
+---
+
+Every marketplace sale has three parties: the buyer, the seller, and you, the platform. Marketplace payments are how one payment from the buyer gets split between the seller and you, and paid out on a schedule. This guide covers split payments, payout timing, escrow, and who does the actual work, so you can set your payment flow up right.
+
+## How do marketplace payments work?
+
+A buyer pays once, the platform splits that money between the seller and itself, and the seller is paid out later. Behind the scenes a payment processor built for platforms, usually Stripe Connect or Adyen for Platforms, does the heavy lifting: it collects the payment, splits the funds, holds them if needed, and sends payouts to each seller, along with the identity checks and compliance that moving other people's money requires. You decide the split, which is your commission, and the payout schedule. The processor enforces them.
+
+## Split payments: who gets what
+
+A split payment divides one charge among the parties at settlement. The share you keep is your commission, or take rate, and it can be set per transaction, so different categories, sellers, or deal types can carry different rates. There are two common flows.
+
+| Flow | How it works | Best when |
+|---|---|---|
+| Direct split | The processor pays each seller and routes your commission automatically | You want funds to never sit in your account |
+| Collect then distribute | The full amount lands with the platform, which pays sellers on a schedule and keeps its cut | You need to hold funds, batch payouts, or manage disputes |
+
+## Payouts: when sellers get paid
+
+Sellers do not have to be paid the instant a buyer checks out. You set the schedule: a fixed number of days after the order, weekly, monthly, or instantly. Delaying payouts protects you against refunds, chargebacks, and disputes, because the money is still with the platform if something goes wrong. Instant payouts do the opposite, paying sellers in minutes, which is a strong recruiting perk when your sellers are small businesses that need cash flow. Most marketplaces start with a delay and add instant payouts later as a premium option.
+
+## Escrow and hold-and-release
+
+Escrow means holding the buyer's money until a condition is met, usually delivery or a completed job, then releasing it to the seller. It is what makes strangers comfortable transacting: the buyer knows the seller cannot vanish with the money, and the seller knows the funds are real and waiting. Hold-and-release matters most for higher-value or higher-risk categories, like services, rentals, and custom orders, where a plain instant payout would leave buyers exposed to fraud or non-delivery.
+
+## The platform vs the payment processor
+
+Two different things run your payments, and it helps to keep them straight.
+
+| Layer | What it does | Examples |
+|---|---|---|
+| Payment processor | Moves the money: charges, splits, payouts, identity checks, compliance, currencies | Stripe Connect, Adyen for Platforms |
+| Marketplace platform | The product on top: listings, checkout, the split rules, payout settings | Nipige and other builders |
+
+The processor is the plumbing, the marketplace platform is the house. A good builder connects to a processor for you, so you configure the split and the schedule instead of writing payment code. Stripe Connect alone supports dozens of countries and more than a hundred currencies, which matters if your sellers are spread across borders.
+
+## What marketplace payments cost
+
+There are two costs, and they are different. The **payment processing fee** is what the processor charges to move money, commonly around 2.9 percent plus a small fixed fee per transaction. Everyone pays this, and it is not yours to remove. The **platform fee** is separate: some marketplace software charges you a subscription and then takes a percentage of every sale on top. That platform cut is the one you can avoid. Nipige charges **$0 platform transaction fees**, so the only per-sale cost is the processor's standard rate.
+
+## Where Nipige fits
+
+Nipige has payments and split payouts built in, so you configure your commission and payout schedule rather than building a payment stack from scratch. It runs on established processors, and it charges **$0 platform transaction fees**, which means you keep 100 percent of your take rate and pay only your processor's standard rate. If your model needs specific escrow or hold-and-release rules, bring them to a demo and confirm the exact flow before you commit.
+
+For how to set the commission you split out, read [marketplace business models explained](/blogs/marketplace-business-models-explained). For why the platform fee matters as you grow, see [the app tax on marketplace fees](/blogs/app-tax-marketplace-transaction-fees). Check the [pricing](/pricing) or [book a demo](/demo).
+
+![Payments built in with Nipige: split payouts, your own commission and schedule, on Stripe and PayPal, with $0 platform transaction fees](/images/blog/pay-banner.svg)
+
+## Frequently Asked Questions
+
+#### How do payments work in a marketplace?
+
+The buyer pays once, and the platform splits that payment between the seller and itself, then pays the seller out on a schedule. A payment processor built for platforms, such as Stripe Connect or Adyen for Platforms, collects the money, performs the split, handles identity checks and compliance, and sends the payouts.
+
+#### What are split payments in a marketplace?
+
+Split payments divide a single charge among the parties at settlement. The seller receives their share and the platform keeps its commission, and the split can be set per transaction so different products or sellers carry different rates. The processor can either pay each party directly or send the whole amount to the platform to distribute.
+
+#### What is escrow in a marketplace?
+
+Escrow is holding the buyer's money until a condition is met, usually delivery or a completed job, then releasing it to the seller. It builds trust between strangers, since the buyer is protected against non-delivery and the seller knows the funds are waiting. It matters most for higher-value services, rentals, and custom orders.
+
+#### When do sellers get paid on a marketplace?
+
+On the schedule you choose. Payouts can be instant, daily, weekly, monthly, or a set number of days after the order. Delaying payouts protects the platform against refunds and disputes, while instant payouts are a strong perk for small-business sellers who need cash flow.
+
+#### What does it cost to accept payments on a marketplace?
+
+Two separate costs. The payment processing fee, commonly around 2.9 percent plus a small fixed fee per transaction, is charged by the processor and applies everywhere. The platform fee is separate: some marketplace software takes a percentage of every sale on top of a subscription. Nipige charges $0 platform transaction fees, so you pay only the processor's rate.

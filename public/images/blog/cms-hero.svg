@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" preserveAspectRatio="xMidYMid meet" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1226"/><stop offset="0.55" stop-color="#141f42"/><stop offset="1" stop-color="#1b2a54"/></linearGradient>
+    <radialGradient id="gB" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3f6fe0" stop-opacity="0.55"/><stop offset="1" stop-color="#3f6fe0" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gO" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff6a3d" stop-opacity="0.5"/><stop offset="1" stop-color="#ff6a3d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff8a5c"/><stop offset="1" stop-color="#ff6a3d"/></linearGradient>
+    <linearGradient id="grn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7ad0a8"/><stop offset="1" stop-color="#39a37a"/></linearGradient>
+    <linearGradient id="cardsheen" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+    <filter id="blurL" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="60"/></filter>
+    <filter id="cardShadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="26" stdDeviation="42" flood-color="#03060f" flood-opacity="0.55"/></filter>
+    <filter id="chipShadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#03060f" flood-opacity="0.5"/></filter>
+    <clipPath id="cardClip"><rect x="648" y="118" width="474" height="480" rx="24"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <circle cx="1015" cy="165" r="290" fill="url(#gB)" filter="url(#blurL)"/>
+  <circle cx="865" cy="690" r="265" fill="url(#gO)" filter="url(#blurL)"/>
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1"><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="400" x2="1200" y2="400"/><line x1="0" y1="570" x2="1200" y2="570"/></g>
+
+  <!-- LEFT copy -->
+  <text x="80" y="196" font-size="15" font-weight="700" letter-spacing="4" fill="#ff9166">FOUNDER'S CHECKLIST &#183; 2026</text>
+  <text x="78" y="284" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-2">How to choose</text>
+  <text x="78" y="348" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-2">marketplace <tspan fill="#7fa6ff">software</tspan></text>
+  <text x="80" y="408" font-size="21" fill="#c2cbe6">Score platforms on what affects your margin,</text>
+  <text x="80" y="438" font-size="21" fill="#c2cbe6">not the sticker price.</text>
+
+  <g transform="translate(80,486)">
+    <rect width="150" height="48" rx="24" fill="url(#pill)" filter="url(#chipShadow)"/>
+    <text x="75" y="30" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">10 points</text>
+  </g>
+
+  <text x="80" y="600" font-size="14" fill="#6f7aa0">The biggest hidden cost is a platform that takes a cut of your sales.</text>
+
+  <!-- RIGHT: checklist card -->
+  <g filter="url(#cardShadow)"><rect x="648" y="118" width="474" height="480" rx="24" fill="#f7f8fc"/></g>
+  <g clip-path="url(#cardClip)">
+    <rect x="648" y="118" width="474" height="72" fill="#ffffff"/>
+    <rect x="648" y="118" width="474" height="480" fill="url(#cardsheen)" opacity="0.5"/>
+  </g>
+  <text x="672" y="150" font-size="12" font-weight="700" letter-spacing="1.5" fill="#8a91a6">WHAT ACTUALLY MATTERS</text>
+  <text x="672" y="172" font-size="18" font-weight="800" fill="#1e2436">The 5 that decide your margin</text>
+  <line x1="672" y1="194" x2="1098" y2="194" stroke="#e7ebf4"/>
+
+  <!-- checklist rows -->
+  <g font-size="15" font-weight="600" fill="#2b3446">
+    <g transform="translate(672,224)"><circle cx="16" cy="16" r="14" fill="#e9f6ef"/><path d="M10 16 l4 4 l8 -9" fill="none" stroke="url(#grn)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="42" y="21">Transaction fees on your sales</text></g>
+    <g transform="translate(672,278)"><circle cx="16" cy="16" r="14" fill="#e9f6ef"/><path d="M10 16 l4 4 l8 -9" fill="none" stroke="url(#grn)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="42" y="21">Native mobile apps included</text></g>
+    <g transform="translate(672,332)"><circle cx="16" cy="16" r="14" fill="#e9f6ef"/><path d="M10 16 l4 4 l8 -9" fill="none" stroke="url(#grn)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="42" y="21">No-code, no dev team needed</text></g>
+    <g transform="translate(672,386)"><circle cx="16" cy="16" r="14" fill="#e9f6ef"/><path d="M10 16 l4 4 l8 -9" fill="none" stroke="url(#grn)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="42" y="21">You own and can export your data</text></g>
+    <g transform="translate(672,440)"><circle cx="16" cy="16" r="14" fill="#e9f6ef"/><path d="M10 16 l4 4 l8 -9" fill="none" stroke="url(#grn)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="42" y="21">Real support, not just a forum</text></g>
+  </g>
+
+  <rect x="672" y="500" width="426" height="70" rx="12" fill="#fff2ec" stroke="#ffd6c2"/>
+  <text x="692" y="528" font-size="13.5" font-weight="800" fill="#c2410c">Ask one question first</text>
+  <text x="692" y="550" font-size="12.5" font-weight="500" fill="#9a6a52">What will this cost me at $50k/month in sales?</text>
+</svg>

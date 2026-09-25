@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" font-family="'Inter','Segoe UI',system-ui,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070C16"/><stop offset="1" stop-color="#0B1628"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#0891B2"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101F38"/><stop offset="1" stop-color="#0B1524"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3EE" stop-opacity="0.1"/><stop offset="0.5" stop-color="#22D3EE" stop-opacity="0.8"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0.1"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#06B6D4" stop-opacity="0.28"/><stop offset="1" stop-color="#06B6D4" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r="1.3" fill="#1B2C46" fill-opacity="0.5"/></pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="cyanglow" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#22D3EE" flood-opacity="0.6"/></filter>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect width="1200" height="600" fill="url(#dots)"/>
+  <ellipse cx="600" cy="300" rx="560" ry="280" fill="url(#glow)"/>
+
+  <g transform="translate(600,72)" text-anchor="middle">
+    <rect x="-190" y="-20" width="380" height="40" rx="20" fill="#0C1A2E" stroke="#1E3350"/>
+    <circle cx="-158" cy="0" r="5" fill="#22D3EE"/>
+    <text x="12" y="5" fill="#9FB6D0" font-size="16" letter-spacing="3" font-weight="600">FOOD DELIVERY MARKETPLACE</text>
+  </g>
+  <text x="600" y="132" text-anchor="middle" fill="#F1F5F9" font-size="30" font-weight="800" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">The four apps of a food delivery marketplace</text>
+
+  <path d="M180 520 H1020" stroke="url(#line)" stroke-width="2.5" fill="none"/>
+  <g fill="#22D3EE" filter="url(#cyanglow)">
+    <circle cx="180" cy="520" r="5"/><circle cx="460" cy="520" r="5"/><circle cx="740" cy="520" r="5"/><circle cx="1020" cy="520" r="5"/>
+  </g>
+
+  <!-- 01 Customer app -->
+  <g transform="translate(60,180)">
+    <g filter="url(#soft)"><rect x="0" y="0" width="240" height="300" rx="20" fill="url(#card)" stroke="#22385A"/></g>
+    <rect x="28" y="28" width="56" height="56" rx="15" fill="url(#cyan)"/>
+    <g stroke="#04222B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="47" y="42" width="18" height="28" rx="4"/><line x1="53" y1="64" x2="59" y2="64"/></g>
+    <text x="212" y="48" text-anchor="end" fill="#31517A" font-size="34" font-weight="800" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">01</text>
+    <text x="28" y="140" fill="#F1F5F9" font-size="21" font-weight="800" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Customer app</text>
+    <text x="28" y="178" fill="#A9BED6" font-size="15">Browse restaurants,</text>
+    <text x="28" y="202" fill="#A9BED6" font-size="15">order, track delivery,</text>
+    <text x="28" y="226" fill="#A9BED6" font-size="15">pay by card or cash.</text>
+    <path d="M28 264 h150" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+  </g>
+
+  <!-- 02 Restaurant panel -->
+  <g transform="translate(340,180)">
+    <g filter="url(#soft)"><rect x="0" y="0" width="240" height="300" rx="20" fill="url(#card)" stroke="#22385A"/></g>
+    <rect x="28" y="28" width="56" height="56" rx="15" fill="url(#cyan)"/>
+    <g stroke="#04222B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="42" y="44" width="28" height="24" rx="4"/><line x1="42" y1="52" x2="70" y2="52"/></g>
+    <text x="212" y="48" text-anchor="end" fill="#31517A" font-size="34" font-weight="800" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">02</text>
+    <text x="28" y="140" fill="#F1F5F9" font-size="21" font-weight="800" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Restaurant panel</text>
+    <text x="28" y="178" fill="#A9BED6" font-size="15">Manage the menu, take</text>
+    <text x="28" y="202" fill="#A9BED6" font-size="15">orders, run promotions,</text>
+    <text x="28" y="226" fill="#A9BED6" font-size="15">own data stays separate.</text>
+    <path d="M28 264 h150" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+  </g>
+
+  <!-- 03 Driver app -->
+  <g transform="translate(620,180)">
+    <g filter="url(#soft)"><rect x="0" y="0" width="240" height="300" rx="20" fill="url(#card)" stroke="#22385A"/></g>
+    <rect x="28" y="28" width="56" height="56" rx="15" fill="url(#cyan)"/>
+    <g stroke="#04222B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="56" cy="56" r="15"/><path d="M56 46 v10 l7 7"/></g>
+    <text x="212" y="48" text-anchor="end" fill="#31517A" font-size="34" font-weight="800" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">03</text>
+    <text x="28" y="140" fill="#F1F5F9" font-size="21" font-weight="800" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Driver app</text>
+    <text x="28" y="178" fill="#A9BED6" font-size="15">Accept or reject orders,</text>
+    <text x="28" y="202" fill="#A9BED6" font-size="15">pick up, deliver, confirm</text>
+    <text x="28" y="226" fill="#A9BED6" font-size="15">with a verification code.</text>
+    <path d="M28 264 h150" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+  </g>
+
+  <!-- 04 Admin console -->
+  <g transform="translate(900,180)">
+    <g filter="url(#soft)"><rect x="0" y="0" width="240" height="300" rx="20" fill="url(#card)" stroke="#22385A"/></g>
+    <rect x="28" y="28" width="56" height="56" rx="15" fill="url(#cyan)"/>
+    <g stroke="#04222B" stroke-width="3" fill="none" stroke-linecap="round"><line x1="44" y1="47" x2="68" y2="47"/><circle cx="60" cy="47" r="4" fill="#04222B"/><line x1="44" y1="56" x2="68" y2="56"/><circle cx="50" cy="56" r="4" fill="#04222B"/><line x1="44" y1="65" x2="68" y2="65"/><circle cx="63" cy="65" r="4" fill="#04222B"/></g>
+    <text x="212" y="48" text-anchor="end" fill="#31517A" font-size="34" font-weight="800" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">04</text>
+    <text x="28" y="140" fill="#F1F5F9" font-size="21" font-weight="800" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Admin console</text>
+    <text x="28" y="178" fill="#A9BED6" font-size="15">Approve restaurants, set</text>
+    <text x="28" y="202" fill="#A9BED6" font-size="15">commission and zones,</text>
+    <text x="28" y="226" fill="#A9BED6" font-size="15">see all sales analytics.</text>
+    <path d="M28 264 h150" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <radialGradient id="cv" cx="50%" cy="0%" r="120%"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef1f8"/></radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#1c2748" flood-opacity="0.10"/></filter>
+  </defs>
+  <rect width="1200" height="560" fill="url(#cv)"/>
+  <text x="72" y="76" font-size="32" font-weight="800" fill="#0f1729" letter-spacing="-.6">Which model fits which marketplace?</text>
+  <text x="72" y="108" font-size="16" fill="#6b7280">The take-rate range that's actually sustainable, by vertical.</text>
+
+  <g filter="url(#soft)"><rect x="72" y="150" width="1056" height="60" rx="12" fill="#0f1729"/></g>
+  <text x="100" y="186" font-size="14" font-weight="700" fill="#fff">Vertical</text>
+  <text x="420" y="186" font-size="14" font-weight="700" fill="#fff">Typical model</text>
+  <text x="720" y="186" font-size="14" font-weight="700" fill="#fff">Sustainable range</text>
+  <text x="960" y="186" font-size="14" font-weight="700" fill="#fff">Why</text>
+
+  <g>
+    <rect x="72" y="220" width="1056" height="56" rx="10" fill="#ffffff" stroke="#eaeef6"/>
+    <text x="100" y="254" font-size="14.5" fill="#0f1729" font-weight="600">On-demand delivery</text>
+    <text x="420" y="254" font-size="14" fill="#374151">Take-rate</text>
+    <text x="720" y="254" font-size="14" fill="#ff6a3d" font-weight="700">15–30%</text>
+    <text x="960" y="254" font-size="12.5" fill="#6b7280">High order frequency</text>
+
+    <rect x="72" y="284" width="1056" height="56" rx="10" fill="#ffffff" stroke="#eaeef6"/>
+    <text x="100" y="318" font-size="14.5" fill="#0f1729" font-weight="600">Rental / booking</text>
+    <text x="420" y="318" font-size="14" fill="#374151">Split take-rate</text>
+    <text x="720" y="318" font-size="14" fill="#ff6a3d" font-weight="700">~17–19% combined</text>
+    <text x="960" y="318" font-size="12.5" fill="#6b7280">High order value</text>
+
+    <rect x="72" y="348" width="1056" height="56" rx="10" fill="#ffffff" stroke="#eaeef6"/>
+    <text x="100" y="382" font-size="14.5" fill="#0f1729" font-weight="600">Service marketplace</text>
+    <text x="420" y="382" font-size="14" fill="#374151">Take-rate or subscription</text>
+    <text x="720" y="382" font-size="14" fill="#ff6a3d" font-weight="700">8–25%</text>
+    <text x="960" y="382" font-size="12.5" fill="#6b7280">Varies by trust needs</text>
+
+    <rect x="72" y="412" width="1056" height="56" rx="10" fill="#eafcff" stroke="#bdeef6"/>
+    <text x="100" y="446" font-size="14.5" fill="#0f1729" font-weight="700">High-volume, thin-margin (any vertical)</text>
+    <text x="420" y="446" font-size="14" fill="#0891B2" font-weight="700">Flat subscription</text>
+    <text x="720" y="446" font-size="14" fill="#0891B2" font-weight="700">$0 take-rate</text>
+    <text x="960" y="446" font-size="12.5" fill="#0e7490">Keeps 100% of GMV</text>
+  </g>
+
+  <text x="72" y="518" font-size="15" fill="#6b7280">Take-rate scales with GMV but caps founder margin; flat-subscription keeps 100% of GMV instead.</text>
+  <text x="1128" y="540" font-size="13" fill="#aeb4c7" text-anchor="end">nipige.com</text>
+</svg>
